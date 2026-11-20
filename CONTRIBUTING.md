@@ -12,7 +12,7 @@ This repository distributes a finished, single-author book, as a PDF and as Mark
 
 ## How to report
 
-1. Check the [open issues](https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow/issues) to avoid duplicates.
+1. Check the [open issues](https://github.com/OzarLand/openstack-the-day-after-tomorrow/issues) to avoid duplicates.
 2. Open a new issue using the appropriate template (*Errata* or *Suggestion*).
 3. Indicate the **book version** (see `CHANGELOG.md`; printed on the title page of the PDF), the **edition** (English or French) and the **page** (PDF) or the **chapter file and section** (Markdown).
 4. For a technical objection, please give your reasoning and, where possible, a primary source (official OpenStack documentation, specs, release notes).
