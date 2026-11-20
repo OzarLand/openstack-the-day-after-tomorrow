@@ -32,7 +32,7 @@ if [[ -z "$VERSION" ]]; then
   VERSION="development build ($(git rev-parse --short HEAD 2>/dev/null || echo unversioned))"
 fi
 DATE="$(date -u +%Y-%m-%d)"
-REPO_URL="https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow"
+REPO_URL="https://github.com/OzarLand/openstack-the-day-after-tomorrow"
 
 BUILD=build
 NAME=openstack-the-day-after-tomorrow

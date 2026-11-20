@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenStack, the Day After Tomorrow · Operating Mission-Critical OpenStack Platforms</title>
+<meta name="description" content="A free book by Soufian Zaouam on operating OpenStack in production for years: visibility, stability, recovery, decision rights, upgrades and control. PDF and Markdown, in English and French.">
+<link rel="canonical" href="https://book.ozarland.com/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="book">
+<meta property="og:site_name" content="OzarLand">
+<meta property="og:title" content="OpenStack, the Day After Tomorrow">
+<meta property="og:description" content="Operating Mission-Critical OpenStack Platforms. A free book, in English and French.">
+<meta property="og:url" content="https://book.ozarland.com/">
+<meta name="twitter:card" content="summary">
+<style>
+  /* OzarLand palette, as on https://ozarland.com/ (brand/academy/tokens/palette.css of ozarland-academy). */
+  :root {
+    color-scheme: light dark;
+    --canvas: #fbf4e4; --surface: #fffdf8; --text: #152a50; --muted: #4e5a6d;
+    --link: #0f62a6; --primary: #1f3a6b; --primary-text: #ffffff; --border: #c4904f;
+    --focus: #f0b440; --keyline: #152a50; --header: #152a50; --header-text: #fbf4e4; --book: #6b4220;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --canvas: #11151a; --surface: #1c2433; --text: #f3e3c3; --muted: #b2bdca;
+      --link: #74b7ee; --primary: #f0b440; --primary-text: #11151a; --border: #8b7355;
+      --keyline: #f3e3c3; --header: #142038; --header-text: #fbf4e4; --book: #d9a865;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--canvas); color: var(--text);
+    font: 1rem/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  a { color: var(--link); text-underline-offset: 0.15em; }
+  a:focus-visible { outline: 2px solid var(--focus); outline-offset: 0; box-shadow: 0 0 0 4px var(--keyline); }
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 0 1rem; }
+  header.top { background: var(--header); color: var(--header-text); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 3.5rem; flex-wrap: wrap; }
+  header.top a { color: var(--header-text); text-decoration: none; font-weight: 700; display: inline-flex; gap: 0.5rem; align-items: center; min-height: 44px; }
+  header.top nav a { font-weight: 500; margin-left: 1rem; }
+  header.top img { width: 1.6rem; height: 1.6rem; }
+  .plate { background: var(--surface); border: 1px solid var(--border); border-top: 6px solid var(--book); border-radius: 1.25rem; padding: 1.6rem 1.6rem 1.4rem; margin: 2.5rem 0 0; box-shadow: 0 0.4rem 1.2rem rgb(21 42 80 / 12%); }
+  .kicker { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.4rem; display: flex; gap: 0.5rem; align-items: center; }
+  .kicker img { width: 1.4rem; height: 1.4rem; }
+  @media (prefers-color-scheme: dark) { .kicker img { background: #f3e3c3; border-radius: 50%; padding: 2px; } }
+  h1 { font-size: 2.5rem; line-height: 1.15; margin: 0 0 0.3rem; }
+  .subtitle { font-size: 1.2rem; font-weight: 600; margin: 0 0 0.3rem; }
+  .author { color: var(--muted); margin: 0 0 1rem; }
+  .lead { max-width: 44rem; margin: 0 0 1.2rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0; }
+  .cta { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.1rem; border-radius: 0.5rem; font-weight: 650; text-decoration: none; border: 1px solid var(--border); color: var(--text); background: var(--surface); }
+  .cta.primary { background: var(--primary); border-color: var(--primary); color: var(--primary-text); }
+  h2 { font-size: 1.6rem; line-height: 1.25; margin: 2.5rem 0 0.6rem; }
+  .intro { max-width: 44rem; }
+  .cards { display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); margin-top: 1rem; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.875rem; padding: 1rem 1.1rem; }
+  .card h3 { margin: 0 0 0.3rem; font-size: 1.1rem; }
+  .card p { margin: 0.3rem 0; }
+  .parts { padding-left: 1.2rem; max-width: 44rem; }
+  .parts li { margin: 0.3rem 0; }
+  blockquote { margin: 0.8rem 0; padding: 0.6rem 1rem; border-left: 4px solid var(--book); background: var(--surface); border-radius: 0 0.5rem 0.5rem 0; max-width: 44rem; overflow-wrap: anywhere; }
+  footer { margin-top: 3rem; padding: 1.5rem 0 2rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+  @media (max-width: 40rem) {
+    h1 { font-size: 1.875rem; }
+    h2 { font-size: 1.4rem; }
+    .plate { padding: 1.2rem 1.1rem; }
+    header.top nav a { margin-left: 0.6rem; font-size: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a href="https://ozarland.com/"><img src="assets/favicon.svg" alt="" width="26" height="26">OzarLand</a>
+    <nav aria-label="Main">
+      <a href="https://academy.ozarland.com/">Academy</a>
+      <a href="https://github.com/OzarLand/openstack-the-day-after-tomorrow">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="plate" aria-labelledby="title">
+    <p class="kicker"><img src="assets/icon-book.svg" alt="">A free book · English and French</p>
+    <h1 id="title">OpenStack, the Day After Tomorrow</h1>
+    <p class="subtitle">Operating Mission-Critical OpenStack Platforms</p>
+    <p class="author">by Soufian Zaouam</p>
+    <p class="lead">Most OpenStack material stops where the real work begins. This book is about what comes next: the
+    years during which a platform has to stay stable, observable, upgradable, secure and, above all, understandable by
+    the people who operate it.</p>
+    <p class="actions">
+      <a class="cta primary" href="https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/latest">Download the PDF</a>
+      <a class="cta" href="https://github.com/OzarLand/openstack-the-day-after-tomorrow#read-the-book-on-github">Read it online</a>
+      <a class="cta" href="#fr" lang="fr">Édition française</a>
+    </p>
+  </section>
+
+  <section aria-labelledby="about">
+    <h2 id="about">About the book</h2>
+    <p class="intro">Its central thesis is that operating OpenStack in production is not only a technical problem. It is
+    also a problem of visibility, stability, organisation, governance and risk management. It draws on more than five
+    years of running OpenStack platforms in production; real experience has been generalised into patterns and
+    principles, and no client, employer, project or environment is described or identifiable.</p>
+    <p class="intro">Twenty chapters in six parts, plus appendices:</p>
+    <ul class="parts">
+      <li><strong>Understanding the problem:</strong> why OpenStack doesn't end at deployment, why the real enemy is loss of control, and the control loop.</li>
+      <li><strong>Assessing control:</strong> assessing and measuring how much control an organisation has over its platform, and what to do when it is already lost.</li>
+      <li><strong>Operating with control:</strong> visibility before action, stability and change, recovery as a feature.</li>
+      <li><strong>The organisation behind the platform:</strong> documentation as operational memory, building the team, decision rights.</li>
+      <li><strong>Evolving without losing control:</strong> upgrades and backports, complexity and technical debt, automation, security as platform work.</li>
+      <li><strong>Decisions from the field:</strong> two worked decisions where technical evidence, business impact and operational constraints collided.</li>
+      <li><strong>Appendices:</strong> a control decision framework, an assessment worksheet, a minimum change decision record, review questions, principles at a glance and a glossary.</li>
+    </ul>
+    <p class="intro">It assumes a working knowledge of OpenStack. It is not an installation guide and does not replace the
+    official documentation.</p>
+  </section>
+
+  <section aria-labelledby="get">
+    <h2 id="get">Get the book</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>PDF</h3>
+        <p>Both editions, tagged and dated, with release notes. Previous versions stay available.</p>
+        <p><a href="https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/latest">Latest release</a> ·
+        <a href="https://github.com/OzarLand/openstack-the-day-after-tomorrow/blob/main/CHANGELOG.md">Changelog</a></p>
+      </div>
+      <div class="card">
+        <h3>Read online</h3>
+        <p>The same text as Markdown, one file per chapter, to read, search, link and quote by section.</p>
+        <p><a href="https://github.com/OzarLand/openstack-the-day-after-tomorrow/blob/main/chapters/00-how-to-read-this-book.md">Start with How to Read This Book</a></p>
+      </div>
+      <div class="card">
+        <h3>Report an error</h3>
+        <p>Corrections, technical objections and suggestions are the main way readers contribute.</p>
+        <p><a href="https://github.com/OzarLand/openstack-the-day-after-tomorrow/issues/new?template=errata.yml">Errata</a> ·
+        <a href="https://github.com/OzarLand/openstack-the-day-after-tomorrow/issues/new?template=suggestion.yml">Suggestion</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="fr" lang="fr">
+    <h2 id="fr">Édition française : <em>OpenStack, après-demain</em></h2>
+    <p class="intro">Le livre existe aussi en français, <em>Exploiter des plateformes OpenStack critiques</em>, maintenu
+    chapitre par chapitre dans le même dépôt. Les deux éditions portent le même numéro de version et sont publiées
+    ensemble.</p>
+    <p class="actions">
+      <a class="cta" href="https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/latest">Télécharger le PDF</a>
+      <a class="cta" href="https://github.com/OzarLand/openstack-the-day-after-tomorrow/blob/main/fr/README.md">Lire en ligne</a>
+    </p>
+  </section>
+
+  <section aria-labelledby="more">
+    <h2 id="more">Going further</h2>
+    <p class="intro">Many runbooks of <a href="https://academy.ozarland.com/">OzarLand Academy</a> come from situations
+    this book describes. The <a href="https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow-guide">Short
+    Guide</a> gives its ideas in 18 illustrated pages.</p>
+  </section>
+
+  <section aria-labelledby="cite">
+    <h2 id="cite">Citing this book</h2>
+    <blockquote>Zaouam, S. (2026). <em>OpenStack, the Day After Tomorrow: Operating Mission-Critical OpenStack
+    Platforms</em>. https://book.ozarland.com/</blockquote>
+    <p class="intro">Give the version you read (on the copyright page of the PDF). A machine-readable citation is in
+    <a href="https://github.com/OzarLand/openstack-the-day-after-tomorrow/blob/main/CITATION.cff">CITATION.cff</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>An independent, personal contribution to the OpenStack community. It is not a publication of the OpenInfra
+    Foundation, of a publisher, or of any employer or client. Part of <a href="https://ozarland.com/">OzarLand</a>.</p>
+    <p>Copyright © 2026 Soufian Zaouam. The book is released under the
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> licence.
+    Sources of this page: <a href="https://github.com/OzarLand/openstack-the-day-after-tomorrow/tree/main/site">OzarLand/openstack-the-day-after-tomorrow</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

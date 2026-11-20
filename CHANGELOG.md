@@ -1,7 +1,7 @@
 # Changelog
 
 All published versions of *OpenStack, the Day After Tomorrow* are listed here, newest first.
-Each version corresponds to a Git tag and a [GitHub Release](https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow/releases) carrying the PDF, which is generated from the Markdown sources by the [build workflow](tools/pdf/README.md).
+Each version corresponds to a Git tag and a [GitHub Release](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases) carrying the PDF, which is generated from the Markdown sources by the [build workflow](tools/pdf/README.md).
 
 Versioning scheme:
 
@@ -44,6 +44,6 @@ First public edition.
 - Five figures
 - Format: PDF, English (Oxford spelling)
 
-[v1.2]: https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow/releases/tag/v1.2
-[v1.1]: https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow/releases/tag/v1.1
-[v1.0]: https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow/releases/tag/v1.0
+[v1.2]: https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/tag/v1.2
+[v1.1]: https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/tag/v1.1
+[v1.0]: https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/tag/v1.0

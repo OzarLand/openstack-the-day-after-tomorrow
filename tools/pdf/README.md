@@ -1,6 +1,6 @@
 # Building the PDF editions
 
-The PDFs distributed on the [Releases](https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow/releases) page are generated from the Markdown sources of this repository by the GitHub Actions workflow [`build-book.yml`](../../.github/workflows/build-book.yml): the English edition from `chapters/`, `appendices/` and `assets/figures/`, the French edition from `fr/chapters/`, `fr/appendices/` and `assets/figures/fr/`. Nothing is edited by hand between the Markdown and the PDF.
+The PDFs distributed on the [Releases](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases) page are generated from the Markdown sources of this repository by the GitHub Actions workflow [`build-book.yml`](../../.github/workflows/build-book.yml): the English edition from `chapters/`, `appendices/` and `assets/figures/`, the French edition from `fr/chapters/`, `fr/appendices/` and `assets/figures/fr/`. Nothing is edited by hand between the Markdown and the PDF.
 
 ## Toolchain
 

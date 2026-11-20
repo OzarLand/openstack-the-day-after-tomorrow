@@ -4,11 +4,11 @@
 
 **Auteur : Soufian Zaouam**
 
-[![Télécharger le PDF](https://img.shields.io/badge/T%C3%A9l%C3%A9charger-PDF%20(derni%C3%A8re%20version)-2ea44f?style=for-the-badge)](https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow/releases/latest)
-[![Version](https://img.shields.io/github/v/release/soufian-zaouam/openstack-the-day-after-tomorrow?label=version&style=for-the-badge)](https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow/releases)
+[![Télécharger le PDF](https://img.shields.io/badge/T%C3%A9l%C3%A9charger-PDF%20(derni%C3%A8re%20version)-2ea44f?style=for-the-badge)](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/latest)
+[![Version](https://img.shields.io/github/v/release/OzarLand/openstack-the-day-after-tomorrow?label=version&style=for-the-badge)](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases)
 [![Licence : CC BY-NC-ND 4.0](https://img.shields.io/badge/Licence-CC%20BY--NC--ND%204.0-lightgrey?style=for-the-badge)](../LICENSE)
 
-Ceci est l’édition française du livre *OpenStack, the Day After Tomorrow*, maintenue dans le même dépôt que l’édition anglaise originale ([README en anglais](../README.md)). Elle en suit le texte chapitre par chapitre ; les deux éditions portent le même numéro de version et sont publiées ensemble.
+Ceci est l’édition française du livre *OpenStack, the Day After Tomorrow*, maintenue dans le même dépôt que l’édition anglaise originale ([README en anglais](../README.md)). Elle en suit le texte chapitre par chapitre ; les deux éditions portent le même numéro de version et sont publiées ensemble. La page du livre : **https://book.ozarland.com/**.
 
 Le livre est publié librement, en **PDF** (voir [Télécharger](#télécharger)) et en **Markdown, un fichier par chapitre, lisible directement sur GitHub** (voir [Lire le livre sur GitHub](#lire-le-livre-sur-github)). C’est une **contribution indépendante et personnelle à la communauté OpenStack**. Ce n’est ni une publication de l’OpenStack Foundation (OpenInfra Foundation), ni celle d’un éditeur, d’un employeur ou d’un client, et il ne décrit la plateforme d’aucune organisation en particulier.
 
@@ -98,6 +98,7 @@ openstack-the-day-after-tomorrow/
 │   ├── STYLE.md           méthode, conventions et terminologie de l’édition française
 │   ├── chapters/          pages liminaires, introduction, chapitres 1–20 et conclusion
 │   └── appendices/        annexes A–F et références
+├── site/                  la page du livre, https://book.ozarland.com/ (HTML, publiée par pages.yml)
 ├── tools/pdf/             génération des PDF (pandoc + XeLaTeX), les deux éditions
 ├── tools/figures/         traduction des figures (tables de libellés dans tools/figures/fr/)
 ├── tools/check_editions.py  vérification de la parité entre les deux éditions
@@ -135,9 +136,9 @@ Le déploiement est le début du parcours opérationnel, pas sa fin. Les leçons
 | **Version courante** | v1.3 |
 | **Publication** | octobre 2026 |
 | **Format** | PDF (français), 125 pages · Markdown (ce dépôt) |
-| **Télécharger** | **[Dernière version →](https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow/releases/latest)** |
+| **Télécharger** | **[Dernière version →](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/latest)** |
 
-Les PDF sont distribués exclusivement sur la page [Releases](https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow/releases) de ce dépôt ; chaque version porte les deux éditions (`openstack-the-day-after-tomorrow-vX.Y.pdf` et `openstack-the-day-after-tomorrow-fr-vX.Y.pdf`). Chaque version est taguée, datée et accompagnée de notes de version. Les versions précédentes restent disponibles. Voir [CHANGELOG.md](../CHANGELOG.md) pour l’historique des changements.
+Les PDF sont distribués exclusivement sur la page [Releases](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases) de ce dépôt ; chaque version porte les deux éditions (`openstack-the-day-after-tomorrow-vX.Y.pdf` et `openstack-the-day-after-tomorrow-fr-vX.Y.pdf`). Chaque version est taguée, datée et accompagnée de notes de version. Les versions précédentes restent disponibles. Voir [CHANGELOG.md](../CHANGELOG.md) pour l’historique des changements.
 
 Le PDF est **généré automatiquement à partir des sources Markdown** de ce dépôt ([`fr/chapters/`](chapters/), [`fr/appendices/`](appendices/), [`assets/figures/fr/`](../assets/figures/fr/)) par un workflow GitHub Actions qui le reconstruit et le vérifie à chaque changement ; un tag de version le publie en release. Voir [`tools/pdf/README.md`](../tools/pdf/README.md) pour la chaîne de génération (pandoc + XeLaTeX) et pour le construire localement (`bash tools/pdf/build.sh fr`).
 
@@ -145,8 +146,8 @@ Le PDF est **généré automatiquement à partir des sources Markdown** de ce d�
 
 Les corrections, les objections techniques et les suggestions sont les bienvenues ; c’est la principale façon pour les lecteurs de contribuer.
 
-- **Une erreur ?** (erreur technique, coquille, passage peu clair, référence cassée, traduction inexacte) → [ouvrir une issue *Errata*](https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow/issues/new?template=errata.yml)
-- **Une suggestion ou une question sur le contenu ?** → [ouvrir une issue *Suggestion*](https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow/issues/new?template=suggestion.yml)
+- **Une erreur ?** (erreur technique, coquille, passage peu clair, référence cassée, traduction inexacte) → [ouvrir une issue *Errata*](https://github.com/OzarLand/openstack-the-day-after-tomorrow/issues/new?template=errata.yml)
+- **Une suggestion ou une question sur le contenu ?** → [ouvrir une issue *Suggestion*](https://github.com/OzarLand/openstack-the-day-after-tomorrow/issues/new?template=suggestion.yml)
 
 Merci d’indiquer la version du livre, l’édition (française) et la page (PDF) ou le fichier de chapitre et la section (Markdown) concernés. Les corrections confirmées sont listées dans le [changelog](../CHANGELOG.md) et intégrées à la version suivante. Une correction de fond est d’abord faite dans l’édition anglaise, puis reportée ici. Voir [CONTRIBUTING.md](../CONTRIBUTING.md).
 
@@ -160,7 +161,7 @@ Pour les usages non couverts par la licence — traductions dans d’autres lang
 
 ## Citer ce livre
 
-> Zaouam, S. (2026). *OpenStack, après-demain : exploiter des plateformes OpenStack critiques* (v1.3, édition française d’*OpenStack, the Day After Tomorrow*). https://github.com/soufian-zaouam/openstack-the-day-after-tomorrow
+> Zaouam, S. (2026). *OpenStack, après-demain : exploiter des plateformes OpenStack critiques* (v1.3, édition française d’*OpenStack, the Day After Tomorrow*). https://github.com/OzarLand/openstack-the-day-after-tomorrow
 
 Une citation lisible par machine est fournie dans [CITATION.cff](../CITATION.cff).
 
