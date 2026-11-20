@@ -4,13 +4,13 @@
 
 **Author: Soufian Zaouam**
 
-[![Download the PDF](https://img.shields.io/badge/Download-PDF%20(latest%20release)-2ea44f?style=for-the-badge)](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/latest)
+[![Read the book](https://img.shields.io/badge/Read-the%20book-2ea44f?style=for-the-badge)](#read-the-book-on-github)
 [![Version](https://img.shields.io/github/v/release/OzarLand/openstack-the-day-after-tomorrow?label=version&style=for-the-badge)](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge)](LICENSE)
 
-This is the author's official repository for the book *OpenStack, the Day After Tomorrow*. It is the reference place to download the current edition, follow new versions, and report errors. The book's page is **https://book.ozarland.com/**.
+This is the author's official repository for the book *OpenStack, the Day After Tomorrow*. It is the reference place to read the current edition, follow new versions, and report errors. The book's page is **https://book.ozarland.com/**.
 
-The book is published freely, as a **PDF** (see [Download](#download)) and as **Markdown, one file per chapter, readable directly on GitHub** (see [Read the book on GitHub](#read-the-book-on-github)). It is an **independent, personal contribution to the OpenStack community**. It is not a publication of the OpenStack Foundation (OpenInfra Foundation), of a publisher, or of any employer or client, and it does not describe any specific organisation's platform.
+The book is published freely, as **Markdown, one file per chapter, readable directly on GitHub** (see [Read the book on GitHub](#read-the-book-on-github)). It is an **independent, personal contribution to the OpenStack community**. It is not a publication of the OpenStack Foundation (OpenInfra Foundation), of a publisher, or of any employer or client, and it does not describe any specific organisation's platform.
 
 ---
 
@@ -38,9 +38,9 @@ Throughout, *Technical note*, *Principle* and *From the field* boxes separate do
 
 ## Read the book on GitHub
 
-The full text of the book is published in this repository as Markdown, **one file per chapter**, so that it can be read directly on GitHub, searched, linked to and quoted by section. The text is that of the PDF, which is generated from these very files; the five figures are provided as SVG in [`assets/figures/`](assets/figures/).
+The full text of the book is published in this repository as Markdown, **one file per chapter**, so that it can be read directly on GitHub, searched, linked to and quoted by section. The five figures are provided as SVG in [`assets/figures/`](assets/figures/).
 
-Start with [How to Read This Book](chapters/00-how-to-read-this-book.md), then follow the *Previous / Contents / Next* links at the bottom of every chapter. The PDF remains available for offline reading (see [Download](#download)).
+Start with [How to Read This Book](chapters/00-how-to-read-this-book.md), then follow the *Previous / Contents / Next* links at the bottom of every chapter.
 
 | | Chapter |
 | --- | --- |
@@ -93,10 +93,8 @@ openstack-the-day-after-tomorrow/
 ├── chapters/              front matter, introduction, chapters 1–20 and the conclusion (one Markdown file each)
 ├── appendices/            appendices A–F and the references
 ├── assets/figures/        the book's figures (SVG)
-├── tools/pdf/             how the PDF is generated from the Markdown (pandoc + XeLaTeX)
 ├── site/                  the book's page, https://book.ozarland.com/ (plain HTML, published by pages.yml)
-├── .github/workflows/     build-book.yml: builds, verifies and releases the PDF;
-│                          pages.yml: publishes site/
+├── .github/workflows/     pages.yml: publishes site/
 ├── CHANGELOG.md           published versions
 ├── CONTRIBUTING.md        how to report errata and suggestions
 ├── CITATION.cff           machine-readable citation
@@ -104,7 +102,7 @@ openstack-the-day-after-tomorrow/
 └── NOTICE                 copyright and trademark notice
 ```
 
-Throughout the text, three kinds of boxed passage from the PDF are rendered as quotations: **Technical note** (verifiable OpenStack facts, with a reference), **Principle** (an operating rule the book recommends) and **From the field** (an operational situation and the decision it required).
+Throughout the text, three kinds of passage are set apart as quotations: **Technical note** (verifiable OpenStack facts, with a reference), **Principle** (an operating rule the book recommends) and **From the field** (an operational situation and the decision it required).
 
 ## Companion resources
 
@@ -128,18 +126,15 @@ Deployment is the beginning of the operational journey, not the end. The hard-wo
 
 **Why it is published openly.** OpenStack is open source, and most of what I know about operating it I learned from documentation, code and discussions that other people chose to share. Publishing this book freely is the most direct way I have to give something back, and to have its content discussed, corrected and improved by the people who operate these platforms every day.
 
-## Download
+## Versions
 
 | | |
 |---|---|
 | **Current version** | v1.3 |
 | **Published** | October 2026 |
-| **Format** | PDF (114 pages) · Markdown (this repository) |
-| **Download** | **[Latest release →](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/latest)** |
+| **Format** | Markdown (this repository) |
 
-The PDF is distributed exclusively through the [Releases](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases) page of this repository. Each version is tagged, dated and accompanied by release notes. Previous versions remain available. See [CHANGELOG.md](CHANGELOG.md) for the history of changes.
-
-The PDF is **generated automatically from the Markdown sources** of this repository ([`chapters/`](chapters/), [`appendices/`](appendices/), [`assets/figures/`](assets/figures/)) by a GitHub Actions workflow that rebuilds and verifies it on every change; a version tag publishes it as a release. See [`tools/pdf/README.md`](tools/pdf/README.md) for the toolchain (pandoc + XeLaTeX) and for building it locally.
+Each version is a Git tag, dated and described in [CHANGELOG.md](CHANGELOG.md). The book is no longer distributed as a PDF; the PDFs of versions up to v1.3 remain on the [Releases](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases) page.
 
 ## Reporting errors and suggesting improvements
 
@@ -148,13 +143,13 @@ Corrections, technical objections and suggestions are welcome and are the main w
 - **Found a mistake?** (technical error, typo, unclear passage, broken reference) → [open an *Errata* issue](https://github.com/OzarLand/openstack-the-day-after-tomorrow/issues/new?template=errata.yml)
 - **Have a suggestion or a question about the content?** → [open a *Suggestion* issue](https://github.com/OzarLand/openstack-the-day-after-tomorrow/issues/new?template=suggestion.yml)
 
-Please mention the book version and the page (PDF) or the chapter file and section (Markdown) concerned. Confirmed corrections are listed in the [changelog](CHANGELOG.md) and integrated into the next version. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Please mention the book version and the chapter file and section concerned. Confirmed corrections are listed in the [changelog](CHANGELOG.md) and integrated into the next version. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## License
 
 Copyright © 2026 Soufian Zaouam.
 
-The book, its figures, the tools that build the PDF and the book's page are released under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). You are free to read, share, adapt, translate and redistribute them, including commercially, as long as you keep the copyright and licence notices and state the changes you make. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
+The book, its figures and the book's page are released under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). You are free to read, share, adapt, translate and redistribute them, including commercially, as long as you keep the copyright and licence notices and state the changes you make. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
 Versions up to v1.3 were published under CC BY-NC-ND 4.0, which is the licence printed in their PDFs.
 

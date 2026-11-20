@@ -7,7 +7,7 @@ body:
     id: version
     attributes:
       label: Book version
-      description: Printed on the title page and in the PDF metadata (e.g. v1.0).
+      description: See CHANGELOG.md (e.g. v1.3).
       placeholder: v1.0
     validations:
       required: true

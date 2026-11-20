@@ -1,7 +1,7 @@
 # Changelog
 
 All published versions of *OpenStack, the Day After Tomorrow* are listed here, newest first.
-Each version corresponds to a Git tag and a [GitHub Release](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases) carrying the PDF, which is generated from the Markdown sources by the [build workflow](tools/pdf/README.md).
+Each version corresponds to a Git tag. Versions up to v1.3 also have a [GitHub Release](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases) carrying a PDF.
 
 Versioning scheme:
 
@@ -11,10 +11,11 @@ Versioning scheme:
 
 ## Unreleased
 
-Change of licence and of scope: the book is now under the Apache License, Version 2.0, and is published in English only.
+Change of licence and of scope: the book is now under the Apache License, Version 2.0, and is published in English and as Markdown only.
 
-- Licence: the book, its figures, the build tools and the book's page move from CC BY-NC-ND 4.0 to the Apache License, Version 2.0 (`LICENSE`, new `NOTICE`, copyright page, README, `CITATION.cff`, `CONTRIBUTING.md`, the book's page). Versions up to v1.3 keep the licence printed in their PDFs.
-- The French edition is withdrawn: `fr/`, the French figures (`assets/figures/fr/`), the tools that produced and checked it (`tools/figures/`, `tools/check_editions.py`, `tools/fr_typography.py`, the French PDF metadata and header) and the French PDF of the releases. The build workflow builds and releases a single PDF.
+- Licence: the book, its figures and the book's page move from CC BY-NC-ND 4.0 to the Apache License, Version 2.0 (`LICENSE`, new `NOTICE`, copyright page, README, `CITATION.cff`, `CONTRIBUTING.md`, the book's page). Versions up to v1.3 keep the licence printed in their PDFs.
+- The French edition is withdrawn: `fr/`, the French figures (`assets/figures/fr/`), the tools that produced and checked it (`tools/figures/`, `tools/check_editions.py`, `tools/fr_typography.py`, the French PDF metadata and header) and the French PDF of the releases.
+- The PDF edition is discontinued: the build toolchain (`tools/pdf/`) and its workflow (`.github/workflows/build-book.yml`) are removed. The PDFs of versions up to v1.3 remain on the Releases page.
 
 ## [v1.3] — 2026-10-25
 
