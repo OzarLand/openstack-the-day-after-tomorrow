@@ -435,7 +435,9 @@
       "map": [
         74,
         22
-      ]
+      ],
+      "image": "assets/story/scenes/19-when-the-safe-decision-is-to-stop.webp",
+      "image_alt": "On a busy quay, a striped barrier and a stop sign close the launch berth of a new airship while the city's lanterns stay lit; LUMO raises a hand beside the team gathered calmly around a map."
     },
     {
       "file": "chapters/20-security-capacity-and-business-criticality.md",
@@ -450,7 +452,9 @@
       "map": [
         71,
         13
-      ]
+      ],
+      "image": "assets/story/scenes/20-security-capacity-and-business-criticality.webp",
+      "image_alt": "Around a table, a diverse team weighs workload tokens on a brass balance beside three empty slots joined by arrows, while LUMO holds the lantern so its narrow beam falls on the balance."
     },
     {
       "file": "chapters/21-conclusion-keeping-openstack-under-control.md",
@@ -465,7 +469,9 @@
       "map": [
         93,
         9
-      ]
+      ],
+      "image": "assets/story/scenes/21-conclusion-keeping-openstack-under-control.webp",
+      "image_alt": "At sunset on the gallery of a lighthouse, LUMO lights a team member's wick from a lantern while the others hold their own lit lanterns, with the island city behind them."
     },
     {
       "file": "appendices/appendix-a-the-control-decision-framework.md",
