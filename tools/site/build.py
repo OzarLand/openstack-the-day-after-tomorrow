@@ -205,7 +205,7 @@ def scene_block(story, page, url):
     solo = not (light or page.get("map") or page.get("kind") == "prelude")
     out = [f'<section class="scene{" solo" if solo else ""}" aria-label="The story">']
     if page.get("image"):
-        out.append(f'<figure class="scene-image"><img src="{rel(url, page["image"])}" width="1800" height="1200" '
+        out.append(f'<figure class="scene-image"><img src="{rel(url, page["image"])}" width="1536" height="1024" '
                    f'alt="{html.escape(page.get("image_alt", ""))}"></figure>')
     out.append('<div class="scene-text">')
     label = []

@@ -112,7 +112,9 @@
       "map": [
         16,
         70
-      ]
+      ],
+      "image": "assets/story/scenes/00-introduction.webp",
+      "image_alt": "LUMO, smiling on a sunny harbour quay, holds out a blank folded map toward the viewer, while dock workers, a sailing ship and a hillside city with an aqueduct continue their day behind."
     },
     {
       "file": "chapters/01-openstack-doesnt-end-at-deployment.md",
@@ -127,7 +129,9 @@
       "map": [
         24,
         79
-      ]
+      ],
+      "image": "assets/story/scenes/01-openstack-doesnt-end-at-deployment.webp",
+      "image_alt": "At a quayside table, a builder hands an open notebook and a ring of keys to an operator while LUMO, holding a lit lantern, welcomes the two teams gathered around them."
     },
     {
       "file": "chapters/02-the-enemy-is-loss-of-control.md",
@@ -142,7 +146,9 @@
       "map": [
         27,
         73.5
-      ]
+      ],
+      "image": "assets/story/scenes/02-the-enemy-is-loss-of-control.webp",
+      "image_alt": "LUMO looks through a large brass lens on a cliff-top wall; in the lens, a coastal road links a harbour, a village and an aqueduct, with patches of mist hiding parts of the path."
     },
     {
       "file": "chapters/03-why-good-platforms-become-difficult-to-operate.md",
@@ -157,7 +163,9 @@
       "map": [
         29,
         68
-      ]
+      ],
+      "image": "assets/story/scenes/03-why-good-platforms-become-difficult-to-operate.webp",
+      "image_alt": "On a terrace above layered walkways and an old aqueduct, LUMO lays a knotted copper thread across a blank parchment while three team members watch and think."
     },
     {
       "file": "chapters/04-the-control-loop.md",
@@ -172,7 +180,9 @@
       "map": [
         25.5,
         60.5
-      ]
+      ],
+      "image": "assets/story/scenes/04-the-control-loop.webp",
+      "image_alt": "A team crouches around seven distinct stones set in a circle on a lookout terrace, linked by a faint ring of light; LUMO sets one stone in place beside a brass compass."
     },
     {
       "file": "chapters/05-assessing-platform-control.md",
