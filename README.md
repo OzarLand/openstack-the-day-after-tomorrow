@@ -6,11 +6,9 @@
 
 [![Download the PDF](https://img.shields.io/badge/Download-PDF%20(latest%20release)-2ea44f?style=for-the-badge)](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/latest)
 [![Version](https://img.shields.io/github/v/release/OzarLand/openstack-the-day-after-tomorrow?label=version&style=for-the-badge)](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases)
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey?style=for-the-badge)](LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge)](LICENSE)
 
 This is the author's official repository for the book *OpenStack, the Day After Tomorrow*. It is the reference place to download the current edition, follow new versions, and report errors. The book's page is **https://book.ozarland.com/**.
-
-**Édition française :** le livre existe aussi en français, *OpenStack, après-demain*, maintenu dans ce même dépôt chapitre par chapitre. Voir [fr/README.md](fr/README.md).
 
 The book is published freely, as a **PDF** (see [Download](#download)) and as **Markdown, one file per chapter, readable directly on GitHub** (see [Read the book on GitHub](#read-the-book-on-github)). It is an **independent, personal contribution to the OpenStack community**. It is not a publication of the OpenStack Foundation (OpenInfra Foundation), of a publisher, or of any employer or client, and it does not describe any specific organisation's platform.
 
@@ -94,22 +92,17 @@ openstack-the-day-after-tomorrow/
 ├── README.md              this page: presentation and table of contents
 ├── chapters/              front matter, introduction, chapters 1–20 and the conclusion (one Markdown file each)
 ├── appendices/            appendices A–F and the references
-├── assets/figures/        the book's figures (SVG); assets/figures/fr/ holds the French-labelled versions
-├── fr/                    the French edition: README (table of contents), STYLE.md (method and terminology),
-│                          chapters/ and appendices/ mirroring the English files one for one
-├── tools/pdf/             how the PDFs are generated from the Markdown (pandoc + XeLaTeX), both editions
-├── tools/figures/         how the French figures are produced from the English ones
-├── tools/check_editions.py  checks that the two editions stay in step (structure, links, typography)
+├── assets/figures/        the book's figures (SVG)
+├── tools/pdf/             how the PDF is generated from the Markdown (pandoc + XeLaTeX)
 ├── site/                  the book's page, https://book.ozarland.com/ (plain HTML, published by pages.yml)
-├── .github/workflows/     build-book.yml: checks the editions, builds, verifies and releases the PDFs;
+├── .github/workflows/     build-book.yml: builds, verifies and releases the PDF;
 │                          pages.yml: publishes site/
 ├── CHANGELOG.md           published versions
 ├── CONTRIBUTING.md        how to report errata and suggestions
 ├── CITATION.cff           machine-readable citation
-└── LICENSE                CC BY-NC-ND 4.0
+├── LICENSE                Apache License, Version 2.0
+└── NOTICE                 copyright and trademark notice
 ```
-
-The English text is the reference edition. Every file of the French edition has the same chapter number or appendix letter as its English counterpart, so that a correction can be carried from one to the other; the mapping is listed in [`fr/STYLE.md`](fr/STYLE.md).
 
 Throughout the text, three kinds of boxed passage from the PDF are rendered as quotations: **Technical note** (verifiable OpenStack facts, with a reference), **Principle** (an operating rule the book recommends) and **From the field** (an operational situation and the decision it required).
 
@@ -141,12 +134,12 @@ Deployment is the beginning of the operational journey, not the end. The hard-wo
 |---|---|
 | **Current version** | v1.3 |
 | **Published** | October 2026 |
-| **Format** | PDF (English, 114 pages; French, 125 pages) · Markdown (this repository) |
+| **Format** | PDF (114 pages) · Markdown (this repository) |
 | **Download** | **[Latest release →](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/latest)** |
 
 The PDF is distributed exclusively through the [Releases](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases) page of this repository. Each version is tagged, dated and accompanied by release notes. Previous versions remain available. See [CHANGELOG.md](CHANGELOG.md) for the history of changes.
 
-The PDF is **generated automatically from the Markdown sources** of this repository ([`chapters/`](chapters/), [`appendices/`](appendices/), [`assets/figures/`](assets/figures/)) by a GitHub Actions workflow that rebuilds and verifies it on every change; a version tag publishes it as a release, together with the PDF of the [French edition](fr/README.md) (`openstack-the-day-after-tomorrow-fr-vX.Y.pdf`). See [`tools/pdf/README.md`](tools/pdf/README.md) for the toolchain (pandoc + XeLaTeX) and for building it locally.
+The PDF is **generated automatically from the Markdown sources** of this repository ([`chapters/`](chapters/), [`appendices/`](appendices/), [`assets/figures/`](assets/figures/)) by a GitHub Actions workflow that rebuilds and verifies it on every change; a version tag publishes it as a release. See [`tools/pdf/README.md`](tools/pdf/README.md) for the toolchain (pandoc + XeLaTeX) and for building it locally.
 
 ## Reporting errors and suggesting improvements
 
@@ -161,9 +154,9 @@ Please mention the book version and the page (PDF) or the chapter file and secti
 
 Copyright © 2026 Soufian Zaouam.
 
-The book is released under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) licence (CC BY-NC-ND 4.0). You are free to read it, download it, share it and redistribute it, in any medium, as long as you credit the author, do not use it commercially and do not distribute modified versions. See [LICENSE](LICENSE).
+The book, its figures, the tools that build the PDF and the book's page are released under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). You are free to read, share, adapt, translate and redistribute them, including commercially, as long as you keep the copyright and licence notices and state the changes you make. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
-For uses not covered by the licence — translations into other languages, excerpts for training material, inclusion in a commercial offering — please open an issue or contact the author. Reasonable requests are usually welcome. The French edition in [`fr/`](fr/) is the author's own and is covered by the same licence.
+Versions up to v1.3 were published under CC BY-NC-ND 4.0, which is the licence printed in their PDFs.
 
 ## Citing this book
 

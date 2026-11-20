@@ -9,6 +9,13 @@ Versioning scheme:
 - **Minor** (`v1.1`): revised or expanded sections, new figures, corrections that change the technical content.
 - Simple typo fixes are batched into the next minor version rather than released on their own.
 
+## Unreleased
+
+Change of licence and of scope: the book is now under the Apache License, Version 2.0, and is published in English only.
+
+- Licence: the book, its figures, the build tools and the book's page move from CC BY-NC-ND 4.0 to the Apache License, Version 2.0 (`LICENSE`, new `NOTICE`, copyright page, README, `CITATION.cff`, `CONTRIBUTING.md`, the book's page). Versions up to v1.3 keep the licence printed in their PDFs.
+- The French edition is withdrawn: `fr/`, the French figures (`assets/figures/fr/`), the tools that produced and checked it (`tools/figures/`, `tools/check_editions.py`, `tools/fr_typography.py`, the French PDF metadata and header) and the French PDF of the releases. The build workflow builds and releases a single PDF.
+
 ## [v1.3] — 2026-10-25
 
 Technical correction to Chapter 20, in both editions.

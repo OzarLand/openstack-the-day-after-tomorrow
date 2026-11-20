@@ -2,12 +2,9 @@
 """Automatic checks on the generated PDF edition of the book.
 
     tools/pdf/verify_pdf.py build/openstack-the-day-after-tomorrow.pdf [build/openstack-the-day-after-tomorrow.log]
-    tools/pdf/verify_pdf.py build/openstack-the-day-after-tomorrow-fr.pdf [build/openstack-the-day-after-tomorrow-fr.log]
 
-The edition (English or French) is recognised from the PDF file name (a "-fr"
-suffix) or given with --edition en|fr; the expectations that depend on the
-language (title, sources, contents heading, figure captions, table samples)
-come from the EDITIONS table below.
+The expectations that depend on the text (title, sources, contents heading,
+table samples) are in the E table below.
 
 Exit code 0 when every check passes, 1 otherwise. The checks:
 
@@ -36,40 +33,24 @@ try:
 except ImportError:  # pragma: no cover
     import fitz as pymupdf  # older package name
 
-MIN_PAGES, MAX_PAGES = 95, 150         # the v1.0 PDF had 116 pages; French runs ~10 % longer
+MIN_PAGES, MAX_PAGES = 95, 150         # the v1.0 PDF had 116 pages
 PAGE_W, PAGE_H = 481.9, 680.3          # 17 x 24 cm, in points
 MIN_SIZE = 300_000                     # bytes
 EXPECTED_FIGURES = ["1.1", "4.1", "5.1", "14.1", "20.1"]   # captions, numbered by chapter
 
-EDITIONS = {
-    "en": {
-        "title": "OpenStack, the Day After Tomorrow",
-        "chapters": "chapters", "appendices": "appendices",
-        "front_matter": "00-front-matter.md",
-        "appendix_glob": "appendix-*.md", "references": "references-and-further-reading.md",
-        "heading_re": r"^# (?:Chapter \d+ — |Appendix [A-F] — )?(.+)$",
-        "numbered_re": r"# (Chapter \d+|Appendix [A-F]) — ",
-        "contents": "Contents", "nav_contents": "Contents ·",
-        "table_markers": [
-            "Keep temporarily with an exit condition",         # chapter 15
-            "Weighted score",                                  # chapter 18
-            "What can wait, and until when?",                  # appendix B
-        ],
-    },
-    "fr": {
-        "title": "OpenStack, après-demain",
-        "chapters": "fr/chapters", "appendices": "fr/appendices",
-        "front_matter": "00-pages-liminaires.md",
-        "appendix_glob": "annexe-*.md", "references": "references-et-lectures-complementaires.md",
-        "heading_re": r"^# (?:Chapitre \d+ — |Annexe [A-F] — )?(.+)$",
-        "numbered_re": r"# (Chapitre \d+|Annexe [A-F]) — ",
-        "contents": "Table des matières", "nav_contents": "Sommaire ·",
-        "table_markers": [
-            "Conserver temporairement avec une condition de sortie",   # chapitre 15
-            "Score pondéré",                                           # chapitre 18
-            "Qu'est-ce qui peut attendre, et jusqu'à quand ?",         # annexe B
-        ],
-    },
+E = {
+    "title": "OpenStack, the Day After Tomorrow",
+    "chapters": "chapters", "appendices": "appendices",
+    "front_matter": "00-front-matter.md",
+    "appendix_glob": "appendix-*.md", "references": "references-and-further-reading.md",
+    "heading_re": r"^# (?:Chapter \d+ — |Appendix [A-F] — )?(.+)$",
+    "numbered_re": r"# (Chapter \d+|Appendix [A-F]) — ",
+    "contents": "Contents", "nav_contents": "Contents ·",
+    "table_markers": [
+        "Keep temporarily with an exit condition",         # chapter 15
+        "Weighted score",                                  # chapter 18
+        "What can wait, and until when?",                  # appendix B
+    ],
 }
 
 failures = []
@@ -98,16 +79,12 @@ def norm(s):
 
 
 def main():
-    args = [a for a in sys.argv[1:] if not a.startswith("--edition")]
-    opts = [a for a in sys.argv[1:] if a.startswith("--edition")]
+    args = sys.argv[1:]
     if len(args) < 1:
         print(__doc__)
         return 2
     pdf_path = args[0]
     log_path = args[1] if len(args) > 1 else None
-    edition = opts[0].split("=", 1)[1] if opts and "=" in opts[0] else ("fr" if pdf_path.endswith("-fr.pdf") else "en")
-    E = EDITIONS[edition]
-    print(f"edition: {edition}")
     root = os.path.dirname(os.path.abspath(__file__))
     repo = os.path.abspath(os.path.join(root, "..", ".."))
 
@@ -152,7 +129,7 @@ def main():
         fail("title page does not carry the title and the author")
     else:
         ok("title page")
-    if "Creative Commons" not in pages[1] or "4.0 International" not in pages[1]:
+    if "Apache License, Version 2.0" not in pages[1]:
         fail("licence notice missing from the copyright page")
     else:
         ok("copyright page with licence")
@@ -211,8 +188,7 @@ def main():
 
     # 7. figures: every caption sits on a page that embeds a vector figure
     #    (a Form XObject carrying the boxes and arrows of the drawing: a few
-    #    hundred paths when the text is outlined, as in the English figures,
-    #    a few dozen when it is real text, as in the French ones), captions
+    #    hundred paths, since the text of the figures is outlined), captions
     #    numbered as expected
     caps = []
     for i, p in enumerate(doc):

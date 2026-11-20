@@ -1,18 +1,15 @@
 #!/usr/bin/env bash
 # Build the PDF edition of the book from the Markdown sources.
 #
-#   tools/pdf/build.sh [EDITION] [VERSION]
+#   tools/pdf/build.sh [VERSION]
 #
-# EDITION is "en" (default: the original edition, chapters/ and appendices/)
-# or "fr" (the French edition, fr/chapters/ and fr/appendices/).
 # VERSION is printed on the copyright page (for example "v1.1"). When it is
 # omitted, the build is labelled as a development build with the commit hash.
-# For compatibility, a first argument that is not an edition is taken as the
-# version of the English edition: "build.sh v1.1" is "build.sh en v1.1".
+# For compatibility with earlier versions of this script, a first argument
+# "en" is ignored: "build.sh en v1.1" is "build.sh v1.1".
 #
-# Output: build/openstack-the-day-after-tomorrow.pdf for the English edition,
-# build/openstack-the-day-after-tomorrow-fr.pdf for the French one (plus the
-# LaTeX sources and logs, in build/, which is ignored by Git).
+# Output: build/openstack-the-day-after-tomorrow.pdf (plus the LaTeX sources
+# and logs, in build/, which is ignored by Git).
 #
 # Requirements: pandoc (>= 3.1), XeLaTeX (TeX Live with tcolorbox, titlesec,
 # fancyhdr, microtype, enumitem, caption), the TeX Gyre and DejaVu fonts,
@@ -23,10 +20,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$ROOT"
 
-EDITION="en"
-if [[ "${1:-}" == "en" || "${1:-}" == "fr" ]]; then
-  EDITION="$1"; shift
-fi
+if [[ "${1:-}" == "en" ]]; then shift; fi
 VERSION="${1:-${BOOK_VERSION:-}}"
 if [[ -z "$VERSION" ]]; then
   VERSION="development build ($(git rev-parse --short HEAD 2>/dev/null || echo unversioned))"
@@ -38,57 +32,25 @@ BUILD=build
 NAME=openstack-the-day-after-tomorrow
 mkdir -p "$BUILD"
 
-# ---- 0. Edition: sources, metadata, title page, figures ----------------------
-# Both editions share the template, the layout (header.tex) and the Lua filter,
-# which recognises the structural markers of each language (see fr/STYLE.md).
-case "$EDITION" in
-  en)
-    SRC=.
-    METADATA=tools/pdf/metadata.yaml
-    HEADER_EXTRA=()
-    FRONT_MATTER=chapters/00-front-matter.md
-    FIGURES=assets/figures
-    SOURCES=(
-      chapters/00-how-to-read-this-book.md
-      chapters/00-introduction.md
-      chapters/0[1-9]-*.md
-      chapters/1[0-9]-*.md
-      chapters/20-*.md
-      chapters/21-*.md
-      appendices/appendix-[a-f]-*.md
-      appendices/references-and-further-reading.md
-    )
-    TITLE="OpenStack,\\\\ the Day After Tomorrow"
-    SUBTITLE="Operating Mission-Critical OpenStack Platforms"
-    ABOUT="\\textbf{About this edition.} Version \\bookversion, generated on \\bookdate\\ from the
+# ---- 0. Sources, metadata, title page, figures --------------------------------
+METADATA=tools/pdf/metadata.yaml
+FRONT_MATTER=chapters/00-front-matter.md
+FIGURES=assets/figures
+SOURCES=(
+  chapters/00-how-to-read-this-book.md
+  chapters/00-introduction.md
+  chapters/0[1-9]-*.md
+  chapters/1[0-9]-*.md
+  chapters/20-*.md
+  chapters/21-*.md
+  appendices/appendix-[a-f]-*.md
+  appendices/references-and-further-reading.md
+)
+TITLE="OpenStack,\\\\ the Day After Tomorrow"
+SUBTITLE="Operating Mission-Critical OpenStack Platforms"
+ABOUT="\\textbf{About this edition.} Version \\bookversion, generated on \\bookdate\\ from the
 Markdown sources published at \\url{$REPO_URL}. Corrections and suggestions are
 welcome through the issues of that repository."
-    ;;
-  fr)
-    SRC=fr
-    NAME="$NAME-fr"
-    METADATA=tools/pdf/metadata-fr.yaml
-    HEADER_EXTRA=(--include-in-header tools/pdf/header-fr.tex)
-    FRONT_MATTER=fr/chapters/00-pages-liminaires.md
-    FIGURES=assets/figures/fr
-    SOURCES=(
-      fr/chapters/00-comment-lire-ce-livre.md
-      fr/chapters/00-introduction.md
-      fr/chapters/0[1-9]-*.md
-      fr/chapters/1[0-9]-*.md
-      fr/chapters/20-*.md
-      fr/chapters/21-*.md
-      fr/appendices/annexe-[a-f]-*.md
-      fr/appendices/references-et-lectures-complementaires.md
-    )
-    TITLE="OpenStack,\\\\ après-demain"
-    SUBTITLE="Exploiter des plateformes OpenStack critiques"
-    ABOUT="\\textbf{À propos de cette édition.} Version \\bookversion, générée le \\bookdate\\ à partir des
-sources Markdown publiées à l’adresse \\url{$REPO_URL}. Les corrections et suggestions
-sont les bienvenues dans les issues de ce dépôt."
-    ;;
-esac
-echo "Edition: $EDITION"
 
 # ---- 1. Ordered list of sources ---------------------------------------------
 for f in "${SOURCES[@]}"; do [[ -f "$f" ]] || { echo "missing source: $f" >&2; exit 1; }; done
@@ -125,9 +87,8 @@ pandoc "${SOURCES[@]}" \
   --template tools/pdf/template.tex \
   --metadata-file "$METADATA" \
   --include-in-header tools/pdf/header.tex \
-  ${HEADER_EXTRA[@]+"${HEADER_EXTRA[@]}"} \
   --lua-filter tools/pdf/filters/book.lua \
-  --resource-path=.:"$SRC"/chapters:"$SRC"/appendices \
+  --resource-path=.:chapters:appendices \
   --top-level-division=chapter \
   --pdf-engine=xelatex \
   --standalone \

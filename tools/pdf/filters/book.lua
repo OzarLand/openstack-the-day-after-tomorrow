@@ -13,32 +13,19 @@
 --   * turns "![Figure X.Y](path)" + "*Figure X.Y: caption*" into a real
 --     figure with a caption (LaTeX numbers it X.Y by itself)
 --
--- The structural markers exist in two languages: English (the original
--- edition) and French (fr/, see fr/STYLE.md). The language is taken from the
--- "lang" metadata of the edition (tools/pdf/metadata*.yaml). The French
--- edition also writes narrow no-break spaces (U+202F) before high punctuation
--- and inside « »; they become \, in LaTeX because the heading font has no
--- glyph for them.
+-- The structural markers the filter looks for are in the M table below.
+-- Narrow no-break spaces (U+202F) become \, in LaTeX because the heading font
+-- has no glyph for them.
 
 local stringify = pandoc.utils.stringify
 
-local MARKERS = {
-  en = {
-    part = "^Part %u+ — ", chapter = "^Chapter %d+ — (.*)$", appendix = "^Appendix %u — (.*)$",
-    appendices = "Appendices", references = "^References",
-    technote = "^Technical note", principle = "^Principle", fromfield = "^From the field",
-    figure = "^Figure %d+%.%d+:", figure_rest = "^Figure %d+%.%d+:%s*(.*)$",
-    appendix_part = "Appendices",
-  },
-  fr = {
-    part = "^Partie %u+ — ", chapter = "^Chapitre %d+ — (.*)$", appendix = "^Annexe %u — (.*)$",
-    appendices = "Annexes", references = "^Références",
-    technote = "^Note technique", principle = "^Principe", fromfield = "^Sur le terrain",
-    figure = "^Figure %d+%.%d+[^:]*:", figure_rest = "^Figure %d+%.%d+[^:]*:%s*(.*)$",
-    appendix_part = "Annexes",
-  },
+local M = {
+  part = "^Part %u+ — ", chapter = "^Chapter %d+ — (.*)$", appendix = "^Appendix %u — (.*)$",
+  appendices = "Appendices", references = "^References",
+  technote = "^Technical note", principle = "^Principle", fromfield = "^From the field",
+  figure = "^Figure %d+%.%d+:", figure_rest = "^Figure %d+%.%d+:%s*(.*)$",
+  appendix_part = "Appendices",
 }
-local M = MARKERS.en
 local NNBSP = "\u{202F}"
 
 local seen_parts = {}
@@ -107,8 +94,6 @@ local function figure_from(img_block, cap_para)
 end
 
 function Pandoc(doc)
-  local lang = doc.meta.lang and stringify(doc.meta.lang) or "en"
-  M = MARKERS[lang:sub(1, 2)] or MARKERS.en
   local out = pandoc.List()
   local blocks = doc.blocks
   local i = 1
@@ -177,7 +162,7 @@ function Pandoc(doc)
     end
   end
   doc.blocks = out
-  -- narrow no-break spaces (French punctuation): keep them unbreakable in
+  -- narrow no-break spaces: keep them unbreakable in
   -- LaTeX without relying on the fonts having the glyph
   if FORMAT:match("latex") then
     doc = doc:walk({
