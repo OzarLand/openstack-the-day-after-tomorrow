@@ -112,7 +112,9 @@
       "map": [
         16,
         70
-      ]
+      ],
+      "image": "assets/story/scenes/00-introduction.webp",
+      "image_alt": "LUMO, smiling on a sunny harbour quay, holds out a blank folded map toward the viewer, while dock workers, a sailing ship and a hillside city with an aqueduct continue their day behind."
     },
     {
       "file": "chapters/01-openstack-doesnt-end-at-deployment.md",
@@ -127,7 +129,9 @@
       "map": [
         24,
         79
-      ]
+      ],
+      "image": "assets/story/scenes/01-openstack-doesnt-end-at-deployment.webp",
+      "image_alt": "At a quayside table, a builder hands an open notebook and a ring of keys to an operator while LUMO, holding a lit lantern, welcomes the two teams gathered around them."
     },
     {
       "file": "chapters/02-the-enemy-is-loss-of-control.md",
@@ -142,7 +146,9 @@
       "map": [
         27,
         73.5
-      ]
+      ],
+      "image": "assets/story/scenes/02-the-enemy-is-loss-of-control.webp",
+      "image_alt": "LUMO looks through a large brass lens on a cliff-top wall; in the lens, a coastal road links a harbour, a village and an aqueduct, with patches of mist hiding parts of the path."
     },
     {
       "file": "chapters/03-why-good-platforms-become-difficult-to-operate.md",
@@ -157,7 +163,9 @@
       "map": [
         29,
         68
-      ]
+      ],
+      "image": "assets/story/scenes/03-why-good-platforms-become-difficult-to-operate.webp",
+      "image_alt": "On a terrace above layered walkways and an old aqueduct, LUMO lays a knotted copper thread across a blank parchment while three team members watch and think."
     },
     {
       "file": "chapters/04-the-control-loop.md",
@@ -172,7 +180,9 @@
       "map": [
         25.5,
         60.5
-      ]
+      ],
+      "image": "assets/story/scenes/04-the-control-loop.webp",
+      "image_alt": "A team crouches around seven distinct stones set in a circle on a lookout terrace, linked by a faint ring of light; LUMO sets one stone in place beside a brass compass."
     },
     {
       "file": "chapters/05-assessing-platform-control.md",
@@ -187,7 +197,9 @@
       "map": [
         33,
         61
-      ]
+      ],
+      "image": "assets/story/scenes/05-assessing-platform-control.webp",
+      "image_alt": "LUMO looks through a brass telescope fitted with six coloured filters on a terrace; around the island view, round insets show a harbour, a workshop, an archive, an aqueduct and a lighthouse, each beside its own three-light indicator."
     },
     {
       "file": "chapters/06-measuring-control.md",
@@ -202,7 +214,9 @@
       "map": [
         32,
         52
-      ]
+      ],
+      "image": "assets/story/scenes/06-measuring-control.webp",
+      "image_alt": "In a sunlit tower room, LUMO points at a board of brass gauges with needles and no numbers while a team member holding a book listens before deciding."
     },
     {
       "file": "chapters/07-when-control-is-already-lost.md",
@@ -217,7 +231,9 @@
       "map": [
         36,
         46
-      ]
+      ],
+      "image": "assets/story/scenes/07-when-control-is-already-lost.webp",
+      "image_alt": "On a misty terrace, LUMO raises an open palm beside a small area roped off with lantern posts, where three team members work, while a paved path marked with arrows leads back out of the mist."
     },
     {
       "file": "chapters/08-visibility-before-action.md",
@@ -232,7 +248,9 @@
       "map": [
         30,
         43
-      ]
+      ],
+      "image": "assets/story/scenes/08-visibility-before-action.webp",
+      "image_alt": "LUMO draws a knotted golden cord along a chain of towers linked by an aqueduct, above a blank parchment on a table, while team members watch and take notes."
     },
     {
       "file": "chapters/09-stability-and-change.md",
@@ -247,7 +265,9 @@
       "map": [
         25,
         39
-      ]
+      ],
+      "image": "assets/story/scenes/09-stability-and-change.webp",
+      "image_alt": "At a workbench beside a brass machine, LUMO and a craftswoman compare two matching brass markers, with a lit lantern, a magnifying glass and a sheet of parchment on the bench."
     },
     {
       "file": "chapters/10-recovery-is-a-feature.md",
@@ -262,7 +282,9 @@
       "map": [
         18,
         36
-      ]
+      ],
+      "image": "assets/story/scenes/10-recovery-is-a-feature.webp",
+      "image_alt": "Beside a calm basin and a stone archive room, LUMO points the team toward two paths, one to a workshop for repair and one to a building site for rebuilding, drawn on a map on the table."
     },
     {
       "file": "chapters/11-documentation-is-operational-memory.md",
@@ -277,7 +299,9 @@
       "map": [
         81,
         69
-      ]
+      ],
+      "image": "assets/story/scenes/11-documentation-is-operational-memory.webp",
+      "image_alt": "In a warm archive full of shelves, two engineers and LUMO read a blank field guide with a ribbon bookmark, next to a notebook closed with a red wax seal."
     },
     {
       "file": "chapters/12-building-the-team-behind-the-platform.md",
@@ -292,7 +316,9 @@
       "map": [
         88,
         65
-      ]
+      ],
+      "image": "assets/story/scenes/12-building-the-team-behind-the-platform.webp",
+      "image_alt": "A diverse team crosses a stone bridge carrying notebooks, maps and lit lanterns, while LUMO hands a coiled wick to the colleague walking beside them."
     },
     {
       "file": "chapters/13-decision-rights.md",
@@ -307,7 +333,9 @@
       "map": [
         90.5,
         56
-      ]
+      ],
+      "image": "assets/story/scenes/13-decision-rights.webp",
+      "image_alt": "Under a wooden pavilion, LUMO lays two distinct brass keys joined by a braided cord on a map, between a group with drawings and tools on one side and a group with ledgers on the other."
     },
     {
       "file": "chapters/14-upgrades-backports-and-upstream-alignment.md",
@@ -322,7 +350,9 @@
       "map": [
         84,
         51
-      ]
+      ],
+      "image": "assets/story/scenes/14-upgrades-backports-and-upstream-alignment.webp",
+      "image_alt": "At a table above a mountain road, LUMO points to a map showing a main route and a dashed side track, beside a brass compass, while the team listens."
     },
     {
       "file": "chapters/15-complexity-technical-debt-and-simplification.md",
@@ -337,7 +367,9 @@
       "map": [
         74,
         52.5
-      ]
+      ],
+      "image": "assets/story/scenes/15-complexity-technical-debt-and-simplification.webp",
+      "image_alt": "On an old overgrown path winding up a hillside, LUMO ties a ribbon to a wooden marker post while the team studies a map of branching routes spread on a rock."
     },
     {
       "file": "chapters/16-automation-and-operational-complexity.md",
@@ -352,7 +384,9 @@
       "map": [
         89,
         41
-      ]
+      ],
+      "image": "assets/story/scenes/16-automation-and-operational-complexity.webp",
+      "image_alt": "LUMO points at a gear inside a transparent brass-framed mill while an operator inspects it with a magnifying glass, a red-handled stop lever within reach on the bench."
     },
     {
       "file": "chapters/17-security-is-platform-work.md",
@@ -367,7 +401,9 @@
       "map": [
         89,
         32
-      ]
+      ],
+      "image": "assets/story/scenes/17-security-is-platform-work.webp",
+      "image_alt": "In a lighthouse store room, LUMO examines a sealed envelope through a magnifying glass, beside a tray of brass keys, a wax seal stamp and a blank calendar on a stand."
     },
     {
       "file": "chapters/18-evolving-a-mission-critical-platform.md",
@@ -382,7 +418,9 @@
       "map": [
         84,
         27
-      ]
+      ],
+      "image": "assets/story/scenes/18-evolving-a-mission-critical-platform.webp",
+      "image_alt": "On a cliff path, LUMO shows the team a map and gestures toward a chain of walkways and lookouts along a ridge, each stage marked by a stone post with arrows pointing both ways."
     },
     {
       "file": "chapters/19-when-the-safe-decision-is-to-stop.md",
@@ -397,7 +435,9 @@
       "map": [
         74,
         22
-      ]
+      ],
+      "image": "assets/story/scenes/19-when-the-safe-decision-is-to-stop.webp",
+      "image_alt": "On a busy quay, a striped barrier and a stop sign close the launch berth of a new airship while the city's lanterns stay lit; LUMO raises a hand beside the team gathered calmly around a map."
     },
     {
       "file": "chapters/20-security-capacity-and-business-criticality.md",
@@ -412,7 +452,9 @@
       "map": [
         71,
         13
-      ]
+      ],
+      "image": "assets/story/scenes/20-security-capacity-and-business-criticality.webp",
+      "image_alt": "Around a table, a diverse team weighs workload tokens on a brass balance beside three empty slots joined by arrows, while LUMO holds the lantern so its narrow beam falls on the balance."
     },
     {
       "file": "chapters/21-conclusion-keeping-openstack-under-control.md",
@@ -427,7 +469,9 @@
       "map": [
         93,
         9
-      ]
+      ],
+      "image": "assets/story/scenes/21-conclusion-keeping-openstack-under-control.webp",
+      "image_alt": "At sunset on the gallery of a lighthouse, LUMO lights a team member's wick from a lantern while the others hold their own lit lanterns, with the island city behind them."
     },
     {
       "file": "appendices/appendix-a-the-control-decision-framework.md",
