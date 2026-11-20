@@ -1,0 +1,481 @@
+{
+  "title": "The Crossing of Control",
+  "hero": "LUMO",
+  "lantern_states": {
+    "unknown": {
+      "label": "Unknown",
+      "meaning": "a weak, broken halo: nobody can yet say what the capability depends on"
+    },
+    "visible": {
+      "label": "Visible",
+      "meaning": "a dotted beam: places and links appear, their meaning not yet established"
+    },
+    "understood": {
+      "label": "Understood",
+      "meaning": "a steady glow: normal and degraded behaviour can be explained"
+    },
+    "controlled": {
+      "label": "Controlled",
+      "meaning": "a sharp beam with visible edges: change follows a known path"
+    },
+    "recoverable": {
+      "label": "Recoverable",
+      "meaning": "a steady light marking a way back"
+    },
+    "sustainable": {
+      "label": "Sustainable",
+      "meaning": "several people carry a steady light"
+    }
+  },
+  "parts": {
+    "I": {
+      "title": "Part I — Understanding the Problem",
+      "accent": "#2F6FD0",
+      "dark": "#8FB0E6"
+    },
+    "II": {
+      "title": "Part II — Assessing Control",
+      "accent": "#1E9FB5",
+      "dark": "#4CC3D6"
+    },
+    "III": {
+      "title": "Part III — Operating with Control",
+      "accent": "#2C7A43",
+      "dark": "#70C78A"
+    },
+    "IV": {
+      "title": "Part IV — The Organization Behind the Platform",
+      "accent": "#C4904F",
+      "dark": "#D9A865"
+    },
+    "V": {
+      "title": "Part V — Evolving Without Losing Control",
+      "accent": "#B55A3A",
+      "dark": "#E0825F"
+    },
+    "VI": {
+      "title": "Part VI — Decisions from the Field",
+      "accent": "#1F3A6B",
+      "dark": "#8FB0E6"
+    },
+    "end": {
+      "title": "The Lighthouse",
+      "accent": "#6B4220",
+      "dark": "#D9A865"
+    },
+    "tools": {
+      "title": "LUMO's Toolbox",
+      "accent": "#6B4220",
+      "dark": "#D9A865"
+    }
+  },
+  "pages": [
+    {
+      "file": "chapters/00-front-matter.md",
+      "kind": "prelude",
+      "place": "Before the Crossing",
+      "scene": "Before any journey there is a name on a cover and a promise about what the pages hold. LUMO, the cartographer of OzarLand, checks the satchel one last time: rolled maps, a small compass, a brass lantern that is not yet lit.",
+      "onward": "On the first page of the field notebook, a few words on how to read the road ahead."
+    },
+    {
+      "file": "chapters/00-how-to-read-this-book.md",
+      "kind": "prelude",
+      "place": "The Cartographer's Key",
+      "scene": "Every good map has a key. LUMO unrolls it on a crate by the quay and points to three marks that will come back along the way: a lens for what can be checked against the documentation, a stone for a rule worth keeping, a field notebook for what really happened somewhere else. Everything between them is the reasoning that connects them.",
+      "keys": [
+        {
+          "box": "technical-note",
+          "label": "Technical note",
+          "pose": "a lens over a scroll: a fact you can verify"
+        },
+        {
+          "box": "principle",
+          "label": "Principle",
+          "pose": "a stone laid on the path: a rule the book recommends"
+        },
+        {
+          "box": "field",
+          "label": "From the field",
+          "pose": "a field notebook: a situation and the decision it required"
+        }
+      ],
+      "onward": "The key rolled up again, LUMO walks down to the harbour, where the crossing begins."
+    },
+    {
+      "file": "chapters/00-introduction.md",
+      "kind": "opening",
+      "place": "The Harbour of the Handover",
+      "scene": "The harbour is busy and the city behind it keeps running, under a light veil of mist. LUMO stands at the end of the quay and unfolds a blank route map toward you. The question that starts the crossing is not painted on any sign; it is the one the book asks.",
+      "light": "unknown",
+      "carry": "A folded route map, still blank.",
+      "onward": "A path leaves the harbour along the coast. LUMO lifts the lantern and takes it.",
+      "map": [
+        16,
+        70
+      ]
+    },
+    {
+      "file": "chapters/01-openstack-doesnt-end-at-deployment.md",
+      "part": "I",
+      "stop": 1,
+      "place": "The Handover Quay",
+      "scene": "At the quay, the builders are handing over maps, keys and logbooks to the people who will operate what they built. The city behind them carries on. LUMO greets both teams and holds the lantern over the handover notebook, without taking it from either of them.",
+      "light": "visible",
+      "light_note": "from Unknown toward Visible: the lantern starts to show who is responsible for what, and where the handover ends",
+      "carry": "A handover notebook with one clear page and one page still empty.",
+      "onward": "The quay becomes a coastal path, climbing toward a cape where the mist lingers.",
+      "map": [
+        24,
+        79
+      ]
+    },
+    {
+      "file": "chapters/02-the-enemy-is-loss-of-control.md",
+      "part": "I",
+      "stop": 2,
+      "place": "The Cape of Signals",
+      "scene": "The mist on the cape does not hide the whole coast. It veils only some of the links between places that are plainly in sight. Nothing is on fire, nobody is shouting. LUMO stops, looks, and asks three questions: what is known here, what is still uncertain, and who is protecting the platform.",
+      "light": "visible",
+      "light_note": "Visible, but uneven at the edge of the mist: no incident is needed to show that control is slipping",
+      "carry": "A lantern lens that reveals four different landmarks.",
+      "onward": "Sweeping the slope below, the beam uncovers layers of old paths under the terraces.",
+      "map": [
+        27,
+        73.5
+      ]
+    },
+    {
+      "file": "chapters/03-why-good-platforms-become-difficult-to-operate.md",
+      "part": "I",
+      "stop": 3,
+      "place": "The Terraces of Trade-offs",
+      "scene": "Walkways added over the years cross and recross above an aqueduct. Each one had a good reason; the reasons are no longer written anywhere. LUMO follows the old tracks one by one and shows where the complexity piled up, without blaming the people who built it.",
+      "light": "understood",
+      "light_note": "from Visible toward Understood: several dependencies become readable",
+      "carry": "A copper thread that ties the historical layers together.",
+      "onward": "Pulled straight, the copper thread lays out seven stones on the ground.",
+      "map": [
+        29,
+        68
+      ]
+    },
+    {
+      "file": "chapters/04-the-control-loop.md",
+      "part": "I",
+      "stop": 4,
+      "place": "The Path of Seven Stones",
+      "scene": "Seven stones circle a small lookout, and the last one leads back to the first place you stop to look. LUMO sets down the stone that is most often forgotten, the one where you check what you did, and shows how what you learn sends you back to looking again.",
+      "light": "understood",
+      "light_note": "Understood: an unbroken beam that draws the loop without closing off the exploration",
+      "carry": "A compass with seven notches.",
+      "onward": "The compass needle swings toward the high plateau, where the whole island can be seen at once.",
+      "map": [
+        25.5,
+        60.5
+      ]
+    },
+    {
+      "file": "chapters/05-assessing-platform-control.md",
+      "part": "II",
+      "stop": 5,
+      "place": "The Observation Plateau",
+      "scene": "From the plateau, several quarters of the island are visible together. The landmarks follow what people need to be able to do, not the names of the buildings. LUMO opens a long telescope toward each quarter in turn and refuses to give the whole island a single mark.",
+      "light": "understood",
+      "light_note": "Visible and Understood are judged separately, quarter by quarter",
+      "carry": "A telescope with six translucent filters, one for each level of control.",
+      "onward": "The filters slide apart and become separate instruments in a tower nearby.",
+      "map": [
+        33,
+        61
+      ]
+    },
+    {
+      "file": "chapters/06-measuring-control.md",
+      "part": "II",
+      "stop": 6,
+      "place": "The Tower of Measures",
+      "scene": "Two instruments in the tower point in different directions. The person who will answer for the decision listens to what each one means before choosing. LUMO sets the readings side by side and leaves the choice to that person.",
+      "light": "understood",
+      "light_note": "Understood: several beams stay distinct instead of merging into one score",
+      "carry": "A measuring board with several needles and no numbered dial.",
+      "onward": "The needles settle on a line of guardrails at the edge of a shelter in the mist.",
+      "map": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "chapters/07-when-control-is-already-lost.md",
+      "part": "II",
+      "stop": 7,
+      "place": "The Restoration Shelter",
+      "scene": "Here the mist is thick. A small working area has been marked out where it cannot reach, with an emergency exit and a way back kept clear. LUMO raises an open palm: stop first. Then the lantern traces the limits of the restoration and the conditions for leaving it.",
+      "light": "controlled",
+      "light_note": "from Unknown to Visible, then Controlled inside a deliberately small perimeter",
+      "carry": "A guardrail marker with an explicit way back.",
+      "onward": "The edge of the shelter becomes the edge of a map of dependencies.",
+      "map": [
+        36,
+        46
+      ]
+    },
+    {
+      "file": "chapters/08-visibility-before-action.md",
+      "part": "III",
+      "stop": 8,
+      "place": "The Gallery of Dependencies",
+      "scene": "Service towers stand connected by aqueducts you can see. Changing the course of one small channel would be felt in several places at once. Before anyone touches anything, LUMO follows each link on a blank map.",
+      "light": "understood",
+      "light_note": "from Visible toward Understood: the beam follows the relations, not only the objects",
+      "carry": "A cartographer's rope, knotted at every point of dependency.",
+      "onward": "The rope is pulled taut between two markers: before, and after.",
+      "map": [
+        30,
+        43
+      ]
+    },
+    {
+      "file": "chapters/09-stability-and-change.md",
+      "part": "III",
+      "stop": 9,
+      "place": "The Workshop of Changes",
+      "scene": "A brass machine rests on a steady workbench. Two markers stand beside it: the state before, and the state verified after. LUMO compares the two with a craftswoman of the team, and the work is not called finished until the second marker has been checked.",
+      "light": "controlled",
+      "light_note": "Controlled: the beam stays sharp during the change and during its verification",
+      "carry": "A matched pair of markers, before and after.",
+      "onward": "The polished machine reflects the light like the calm surface of a reservoir.",
+      "map": [
+        25,
+        39
+      ]
+    },
+    {
+      "file": "chapters/10-recovery-is-a-feature.md",
+      "part": "III",
+      "stop": 10,
+      "place": "The Memory Reservoir",
+      "scene": "A basin and a hall of archives hold the memory of the platform. Two distinct paths lead away from them: one to repair, one to rebuild. LUMO lights both, then walks one of them with the team as a rehearsal, so that the way back is known before it is needed.",
+      "light": "recoverable",
+      "light_note": "Recoverable: the light marks a known way back, not a promise that nothing will fail",
+      "carry": "A memory ledger and a recovery token that has been tested.",
+      "onward": "The ledger opens onto the shelves of the island's operational memory.",
+      "map": [
+        18,
+        36
+      ]
+    },
+    {
+      "file": "chapters/11-documentation-is-operational-memory.md",
+      "part": "IV",
+      "stop": 11,
+      "place": "The Living Archives",
+      "scene": "Every notebook on these shelves has a place to be kept up to date. One member of the team is testing a guide with another. LUMO reads along with the operator and checks two things: that the guide has an owner, and that someone has proved it works.",
+      "light": "sustainable",
+      "light_note": "from Controlled toward Sustainable: the light holds beyond a single person",
+      "carry": "An operations notebook with an owner's seal and a test bookmark.",
+      "onward": "The notebook passes from hand to hand all the way to the team's hall.",
+      "map": [
+        81,
+        69
+      ]
+    },
+    {
+      "file": "chapters/12-building-the-team-behind-the-platform.md",
+      "part": "IV",
+      "stop": 12,
+      "place": "The Bridge of Handing On",
+      "scene": "Several people cross the bridge together, sharing maps and notebooks. No single pair of hands carries everything. LUMO passes the flame to a colleague, who turns and passes it on in turn.",
+      "light": "sustainable",
+      "light_note": "Sustainable in the making: several small, steady lights on the same crossing",
+      "carry": "A lantern wick that can be handed on, and a shared notebook.",
+      "onward": "On the far side, the bridge opens onto the pavilion where decisions are made.",
+      "map": [
+        88,
+        65
+      ]
+    },
+    {
+      "file": "chapters/13-decision-rights.md",
+      "part": "IV",
+      "stop": 13,
+      "place": "The Pavilion of Two Authorities",
+      "scene": "Two decision tables stand in the pavilion, linked but distinct: one for technical authority, one for business authority. LUMO lays two keys on the map and asks the question that has to be answered before anything goes wrong: who decides?",
+      "light": "sustainable",
+      "light_note": "Sustainable, as long as roles and limits are explicit",
+      "carry": "Two distinct keys joined by a decision cord.",
+      "onward": "The keys turn the map toward the road that comes down from upstream.",
+      "map": [
+        90.5,
+        56
+      ]
+    },
+    {
+      "file": "chapters/14-upgrades-backports-and-upstream-alignment.md",
+      "part": "V",
+      "stop": 14,
+      "place": "The Upstream Pass",
+      "scene": "One road follows the route that is maintained from upstream. A side track branches off: a backport, which asks for a decision about risk. LUMO compares the two on the map and does not declare either of them right for everyone.",
+      "light": "sustainable",
+      "light_note": "Sustainable: the beam lights the trade-offs and stays precise about the detour",
+      "carry": "An alignment compass with a marked side track.",
+      "onward": "The side track joins an old shortcut, half overgrown.",
+      "map": [
+        84,
+        51
+      ]
+    },
+    {
+      "file": "chapters/15-complexity-technical-debt-and-simplification.md",
+      "part": "V",
+      "stop": 15,
+      "place": "The Inherited Shortcut",
+      "scene": "The old shortcut was useful once. Today it runs through a thicket of forks and detours. LUMO points out its history and its risk, and steps back: the team chooses what can be simplified.",
+      "light": "understood",
+      "light_note": "from Visible toward Understood: the detours are mapped before anything is simplified",
+      "carry": "A road marker tied with an old, documented knot.",
+      "onward": "Once the way is cleared, it reveals a machine that turns on its own.",
+      "map": [
+        74,
+        52.5
+      ]
+    },
+    {
+      "file": "chapters/16-automation-and-operational-complexity.md",
+      "part": "V",
+      "stop": 16,
+      "place": "The Transparent Mill",
+      "scene": "A geared mechanism turns slowly. Its parts can be seen, and a stop crank is within reach. LUMO examines one well-understood gear with the operator before letting the machine carry out a limited task on its own.",
+      "light": "controlled",
+      "light_note": "Controlled: the beam shows where the automation ends and where a person can stop it",
+      "carry": "A transparent gear with a stop crank.",
+      "onward": "The stilled gear turns into a seal that has to be looked after.",
+      "map": [
+        89,
+        41
+      ]
+    },
+    {
+      "file": "chapters/17-security-is-platform-work.md",
+      "part": "V",
+      "stop": 17,
+      "place": "The Lighthouse of Renewals",
+      "scene": "Seals, keys and sealed envelopes are tended here before they wear out, and no secret is ever left on display. LUMO checks the life cycle of one seal and its due date on a blank calendar.",
+      "light": "sustainable",
+      "light_note": "Sustainable: the lantern lights regular renewals rather than a late emergency",
+      "carry": "A wax seal and a renewal calendar without numbers.",
+      "onward": "The maintenance path climbs to a ridge lined with decision gates.",
+      "map": [
+        89,
+        32
+      ]
+    },
+    {
+      "file": "chapters/18-evolving-a-mission-critical-platform.md",
+      "part": "V",
+      "stop": 18,
+      "place": "The Ridge of Operating States",
+      "scene": "A chain of walkways runs along the ridge, with decision gates and places to stop and look. Each gate opens one step of the change. At every gate, LUMO shows the point where the team must decide: go on, or return to the state before.",
+      "light": "sustainable",
+      "light_note": "Sustainable, with a beam that reveals one passage at a time",
+      "carry": "Transition markers anchored in the rock.",
+      "onward": "Far above the field stations, a storm cloud begins to gather.",
+      "map": [
+        84,
+        27
+      ]
+    },
+    {
+      "file": "chapters/19-when-the-safe-decision-is-to-stop.md",
+      "part": "VI",
+      "stop": 19,
+      "place": "The Relay of Messages and Memory",
+      "scene": "At the quay where new machines are launched, a barrier has been set across the way. The city beyond stays lit and keeps working. LUMO raises a hand to mark the stop; the people in charge chose to stop taking new requests for a while, accepting the loss of one capability to protect the platform and the workloads already running.",
+      "light": "recoverable",
+      "light_note": "from Controlled toward Recoverable: the perimeter holds while the incident is dealt with",
+      "carry": "A temporary stop marker and a marker for resuming.",
+      "onward": "The barrier stays where it is, and the light follows the machines already at work.",
+      "map": [
+        74,
+        22
+      ]
+    },
+    {
+      "file": "chapters/20-security-capacity-and-business-criticality.md",
+      "part": "VI",
+      "stop": 20,
+      "place": "The Pass of Reserves",
+      "scene": "The team is weighing how to carry out a patching campaign across several hundred hosts. The spare capacity is limited, and everyone can see it. LUMO listens to the options being compared and lights the point of decision, without choosing for them and without pretending that every workload can move at once.",
+      "light": "controlled",
+      "light_note": "Controlled: a narrow beam shows the limited capacity and the points of decision",
+      "carry": "Workload tokens and a balance of options.",
+      "onward": "The tokens and the options are laid in a shared notebook, at the top of the lighthouse.",
+      "map": [
+        71,
+        13
+      ]
+    },
+    {
+      "file": "chapters/21-conclusion-keeping-openstack-under-control.md",
+      "part": "end",
+      "kind": "closing",
+      "place": "The Lighthouse of Lasting Light",
+      "scene": "From the top of the lighthouse the team looks back over the city and the road it has crossed. Lanterns are lit in several hands. LUMO reminds them that being able to say no is an operating decision, then hands the flame on and stays at their side.",
+      "light": "sustainable",
+      "light_note": "Sustainable: the knowledge and the light outlast any single person",
+      "carry": "A night-watch lantern and a wick that has been passed on.",
+      "onward": "The light settles. Back to the map, and to the tools in LUMO's satchel.",
+      "map": [
+        93,
+        9
+      ]
+    },
+    {
+      "file": "appendices/appendix-a-the-control-decision-framework.md",
+      "part": "tools",
+      "place": "LUMO's Toolbox — The two-way compass",
+      "scene": "In the satchel, the tools that make the crossing repeatable. First, the compass with two paths: the structure of a decision."
+    },
+    {
+      "file": "appendices/appendix-b-the-control-assessment-worksheet.md",
+      "part": "tools",
+      "place": "LUMO's Toolbox — The telescope's notebook",
+      "scene": "The page LUMO fills in on the observation plateau, one capability at a time."
+    },
+    {
+      "file": "appendices/appendix-c-a-minimum-change-decision-record.md",
+      "part": "tools",
+      "place": "LUMO's Toolbox — The change card",
+      "scene": "The card that goes with every change across the workshop: the objective, the options weighed, the stop conditions and the way back to a trusted state."
+    },
+    {
+      "file": "appendices/appendix-d-control-review-questions.md",
+      "part": "tools",
+      "place": "LUMO's Toolbox — The questions on the road",
+      "scene": "The questions LUMO asks at every stop, gathered in one place."
+    },
+    {
+      "file": "appendices/appendix-e-operating-principles-at-a-glance.md",
+      "part": "tools",
+      "place": "LUMO's Toolbox — The stones of the path",
+      "scene": "Every stone laid along the way, on one page."
+    },
+    {
+      "file": "appendices/appendix-f-glossary.md",
+      "part": "tools",
+      "place": "LUMO's Toolbox — The map legend",
+      "scene": "The names of the places and the services met on the crossing."
+    },
+    {
+      "file": "appendices/references-and-further-reading.md",
+      "part": "tools",
+      "place": "LUMO's Toolbox — The library",
+      "scene": "Where every technical note comes from, and where to read further."
+    }
+  ],
+  "map": {
+    "image": "assets/story/map.webp",
+    "width": 1490,
+    "height": 1055,
+    "alt": "An illustrated archipelago: a road winds from LUMO at a harbour on the left, through misted hills, workshops and an observatory, across the water to an archive village, a ridge and a lighthouse where a team shares lanterns."
+  }
+}
