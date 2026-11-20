@@ -282,7 +282,9 @@
       "map": [
         18,
         36
-      ]
+      ],
+      "image": "assets/story/scenes/10-recovery-is-a-feature.webp",
+      "image_alt": "Beside a calm basin and a stone archive room, LUMO points the team toward two paths, one to a workshop for repair and one to a building site for rebuilding, drawn on a map on the table."
     },
     {
       "file": "chapters/11-documentation-is-operational-memory.md",
@@ -297,7 +299,9 @@
       "map": [
         81,
         69
-      ]
+      ],
+      "image": "assets/story/scenes/11-documentation-is-operational-memory.webp",
+      "image_alt": "In a warm archive full of shelves, two engineers and LUMO read a blank field guide with a ribbon bookmark, next to a notebook closed with a red wax seal."
     },
     {
       "file": "chapters/12-building-the-team-behind-the-platform.md",
@@ -312,7 +316,9 @@
       "map": [
         88,
         65
-      ]
+      ],
+      "image": "assets/story/scenes/12-building-the-team-behind-the-platform.webp",
+      "image_alt": "A diverse team crosses a stone bridge carrying notebooks, maps and lit lanterns, while LUMO hands a coiled wick to the colleague walking beside them."
     },
     {
       "file": "chapters/13-decision-rights.md",
@@ -327,7 +333,9 @@
       "map": [
         90.5,
         56
-      ]
+      ],
+      "image": "assets/story/scenes/13-decision-rights.webp",
+      "image_alt": "Under a wooden pavilion, LUMO lays two distinct brass keys joined by a braided cord on a map, between a group with drawings and tools on one side and a group with ledgers on the other."
     },
     {
       "file": "chapters/14-upgrades-backports-and-upstream-alignment.md",
@@ -342,7 +350,9 @@
       "map": [
         84,
         51
-      ]
+      ],
+      "image": "assets/story/scenes/14-upgrades-backports-and-upstream-alignment.webp",
+      "image_alt": "At a table above a mountain road, LUMO points to a map showing a main route and a dashed side track, beside a brass compass, while the team listens."
     },
     {
       "file": "chapters/15-complexity-technical-debt-and-simplification.md",
