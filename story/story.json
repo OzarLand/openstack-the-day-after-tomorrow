@@ -197,7 +197,9 @@
       "map": [
         33,
         61
-      ]
+      ],
+      "image": "assets/story/scenes/05-assessing-platform-control.webp",
+      "image_alt": "LUMO looks through a brass telescope fitted with six coloured filters on a terrace; around the island view, round insets show a harbour, a workshop, an archive, an aqueduct and a lighthouse, each beside its own three-light indicator."
     },
     {
       "file": "chapters/06-measuring-control.md",
@@ -212,7 +214,9 @@
       "map": [
         32,
         52
-      ]
+      ],
+      "image": "assets/story/scenes/06-measuring-control.webp",
+      "image_alt": "In a sunlit tower room, LUMO points at a board of brass gauges with needles and no numbers while a team member holding a book listens before deciding."
     },
     {
       "file": "chapters/07-when-control-is-already-lost.md",
@@ -227,7 +231,9 @@
       "map": [
         36,
         46
-      ]
+      ],
+      "image": "assets/story/scenes/07-when-control-is-already-lost.webp",
+      "image_alt": "On a misty terrace, LUMO raises an open palm beside a small area roped off with lantern posts, where three team members work, while a paved path marked with arrows leads back out of the mist."
     },
     {
       "file": "chapters/08-visibility-before-action.md",
@@ -242,7 +248,9 @@
       "map": [
         30,
         43
-      ]
+      ],
+      "image": "assets/story/scenes/08-visibility-before-action.webp",
+      "image_alt": "LUMO draws a knotted golden cord along a chain of towers linked by an aqueduct, above a blank parchment on a table, while team members watch and take notes."
     },
     {
       "file": "chapters/09-stability-and-change.md",
@@ -257,7 +265,9 @@
       "map": [
         25,
         39
-      ]
+      ],
+      "image": "assets/story/scenes/09-stability-and-change.webp",
+      "image_alt": "At a workbench beside a brass machine, LUMO and a craftswoman compare two matching brass markers, with a lit lantern, a magnifying glass and a sheet of parchment on the bench."
     },
     {
       "file": "chapters/10-recovery-is-a-feature.md",
