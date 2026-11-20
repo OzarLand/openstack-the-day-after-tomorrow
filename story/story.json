@@ -367,7 +367,9 @@
       "map": [
         74,
         52.5
-      ]
+      ],
+      "image": "assets/story/scenes/15-complexity-technical-debt-and-simplification.webp",
+      "image_alt": "On an old overgrown path winding up a hillside, LUMO ties a ribbon to a wooden marker post while the team studies a map of branching routes spread on a rock."
     },
     {
       "file": "chapters/16-automation-and-operational-complexity.md",
@@ -382,7 +384,9 @@
       "map": [
         89,
         41
-      ]
+      ],
+      "image": "assets/story/scenes/16-automation-and-operational-complexity.webp",
+      "image_alt": "LUMO points at a gear inside a transparent brass-framed mill while an operator inspects it with a magnifying glass, a red-handled stop lever within reach on the bench."
     },
     {
       "file": "chapters/17-security-is-platform-work.md",
@@ -397,7 +401,9 @@
       "map": [
         89,
         32
-      ]
+      ],
+      "image": "assets/story/scenes/17-security-is-platform-work.webp",
+      "image_alt": "In a lighthouse store room, LUMO examines a sealed envelope through a magnifying glass, beside a tray of brass keys, a wax seal stamp and a blank calendar on a stand."
     },
     {
       "file": "chapters/18-evolving-a-mission-critical-platform.md",
@@ -412,7 +418,9 @@
       "map": [
         84,
         27
-      ]
+      ],
+      "image": "assets/story/scenes/18-evolving-a-mission-critical-platform.webp",
+      "image_alt": "On a cliff path, LUMO shows the team a map and gestures toward a chain of walkways and lookouts along a ridge, each stage marked by a stone post with arrows pointing both ways."
     },
     {
       "file": "chapters/19-when-the-safe-decision-is-to-stop.md",
