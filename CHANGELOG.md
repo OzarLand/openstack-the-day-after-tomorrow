@@ -1,32 +1,25 @@
 # Changelog
 
-All published versions of *OpenStack, the Day After Tomorrow* are listed here, newest first.
-Each version corresponds to a Git tag. Versions up to v1.3 also have a [GitHub Release](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases) carrying a PDF.
+The changes made to *OpenStack, the Day After Tomorrow* are listed here, newest first, by date. The text on the `main` branch is the current edition.
 
-Versioning scheme:
+## 2026-11-20
 
-- **Major** (`v2.0`): substantial rewrite, new parts or chapters, change of structure.
-- **Minor** (`v1.1`): revised or expanded sections, new figures, corrections that change the technical content.
-- Simple typo fixes are batched into the next minor version rather than released on their own.
+Change of licence and of scope: the book is now under the Apache License, Version 2.0, and is published in English and as Markdown only, without numbered versions.
 
-## Unreleased
+- Licence: the book, its figures and the book's page move from CC BY-NC-ND 4.0 to the Apache License, Version 2.0 (`LICENSE`, new `NOTICE`, copyright page, README, `CITATION.cff`, `CONTRIBUTING.md`, the book's page). Earlier editions were published under CC BY-NC-ND 4.0.
+- The French edition is withdrawn: `fr/`, the French figures (`assets/figures/fr/`), the tools that produced and checked it (`tools/figures/`, `tools/check_editions.py`, `tools/fr_typography.py`, the French PDF metadata and header).
+- The PDF edition is discontinued: the build toolchain (`tools/pdf/`) and its workflow (`.github/workflows/build-book.yml`) are removed. The GitHub releases, their PDFs and the version tags (v1.0 to v1.3) are withdrawn.
 
-Change of licence and of scope: the book is now under the Apache License, Version 2.0, and is published in English and as Markdown only.
-
-- Licence: the book, its figures and the book's page move from CC BY-NC-ND 4.0 to the Apache License, Version 2.0 (`LICENSE`, new `NOTICE`, copyright page, README, `CITATION.cff`, `CONTRIBUTING.md`, the book's page). Versions up to v1.3 keep the licence printed in their PDFs.
-- The French edition is withdrawn: `fr/`, the French figures (`assets/figures/fr/`), the tools that produced and checked it (`tools/figures/`, `tools/check_editions.py`, `tools/fr_typography.py`, the French PDF metadata and header) and the French PDF of the releases.
-- The PDF edition is discontinued: the build toolchain (`tools/pdf/`) and its workflow (`.github/workflows/build-book.yml`) are removed. The PDFs of versions up to v1.3 remain on the Releases page.
-
-## [v1.3] — 2026-10-25
+## 2026-10-25
 
 Technical correction to Chapter 20, in both editions.
 
 - Chapter 20, technical note on host maintenance (both editions): instances with SR-IOV `direct` ports can be live-migrated with the libvirt driver since the Train release (Nova 20.0.0), at the cost of a brief loss of that interface in the guest; only `direct-physical` ports stay with PCI passthrough among the instances that cannot be live-migrated. Reference to the Nova Train release notes added.
 - README (both editions): link to [OpenStack Operator Skills](https://github.com/soufian-zaouam/openstack-operator-skills), the book's operating method as Agent Skills for Claude, among the companion resources.
 
-## [v1.2] — 2026-10-17
+## 2026-10-17
 
-French edition of the book, *OpenStack, après-demain : exploiter des plateformes OpenStack critiques*, maintained in this repository alongside the original. Same text, same structure, same version number.
+French edition of the book, *OpenStack, après-demain : exploiter des plateformes OpenStack critiques*, maintained in this repository alongside the original. Same text, same structure.
 
 - The full French text under `fr/` (`fr/chapters/`, `fr/appendices/`), one Markdown file per chapter, with the same chapter numbers and appendix letters as the English files, a French table of contents (`fr/README.md`) and an editorial guide fixing the method and the terminology (`fr/STYLE.md`).
 - The five figures redrawn with French labels (`assets/figures/fr/`), generated from the English SVG files by `tools/figures/`, which keeps the drawing and replaces the text.
@@ -34,24 +27,20 @@ French edition of the book, *OpenStack, après-demain : exploiter des plateforme
 - `tools/check_editions.py` verifies that the two editions stay in step (files, headings, boxed passages, figures, tables, code, links, cross-references, French typography); the workflow runs it before building.
 - English text: the URL of the Galera *Monitoring the Cluster* reference is corrected (it contained stray spaces).
 
-## [v1.1] — 2026-09-30
+## 2026-09-30
 
-First edition whose PDF is generated automatically from the Markdown sources, by GitHub Actions (pandoc + XeLaTeX). Same text as v1.0.
+First edition whose PDF is generated automatically from the Markdown sources, by GitHub Actions (pandoc + XeLaTeX). Same text as the first edition.
 
 - The full text is published in this repository as Markdown, one file per chapter (`chapters/`, `appendices/`), with the five figures as SVG (`assets/figures/`). Readable directly on GitHub.
 - The PDF is rebuilt and verified on every push (`tools/pdf/`, `.github/workflows/build-book.yml`); a version tag publishes it as a release.
-- Copyright page corrected: the licence (CC BY-NC-ND 4.0), the version and the source repository are now stated; the "All rights reserved" notice of v1.0 is gone.
-- Same page size, fonts and layout as v1.0 (17 × 24 cm, TeX Gyre Pagella / Heros); 114 pages instead of 116.
+- Copyright page corrected: the licence (CC BY-NC-ND 4.0), the version and the source repository are now stated; the "All rights reserved" notice of the first edition is gone.
+- Same page size, fonts and layout as the first edition (17 × 24 cm, TeX Gyre Pagella / Heros); 114 pages instead of 116.
 - README rewritten around the online table of contents; CONTRIBUTING updated accordingly.
 
-## [v1.0] — 2026-09-13
+## 2026-09-13
 
 First public edition.
 
 - 20 chapters in six parts, plus appendices and references
 - Five figures
 - Format: PDF, English (Oxford spelling)
-
-[v1.2]: https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/tag/v1.2
-[v1.1]: https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/tag/v1.1
-[v1.0]: https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/tag/v1.0

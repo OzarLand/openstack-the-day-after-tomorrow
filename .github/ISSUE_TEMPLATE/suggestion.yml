@@ -4,13 +4,6 @@ title: "[Suggestion] "
 labels: ["suggestion"]
 body:
   - type: input
-    id: version
-    attributes:
-      label: Book version
-      placeholder: v1.0
-    validations:
-      required: true
-  - type: input
     id: location
     attributes:
       label: Related chapter / section (if any)
