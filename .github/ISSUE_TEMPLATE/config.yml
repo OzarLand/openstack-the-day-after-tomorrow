@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Download the book
-    url: https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/latest
-    about: The current PDF is always available from the latest release.
+  - name: Read the book
+    url: https://book.ozarland.com/
+    about: The book's page, with links to the text, chapter by chapter.

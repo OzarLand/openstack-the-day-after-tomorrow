@@ -6,7 +6,7 @@
 
 ---
 
-© 2026 Soufian Zaouam. This book is released under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International licence (CC BY-NC-ND 4.0): you may read it, download it, share it and redistribute it, in any medium, provided you credit the author, do not use it commercially and do not distribute modified versions.
+© 2026 Soufian Zaouam. This book is released under the Apache License, Version 2.0: you may read it, share it, adapt it and redistribute it, including commercially, provided you keep the copyright and licence notices and state the changes you make. It is provided as is, without warranties of any kind; the full text of the licence is in the `LICENSE` file of the book's repository.
 
 This book is an independent work about operating OpenStack platforms. It is not affiliated with, sponsored by or endorsed by the OpenInfra Foundation or any OpenStack project team. OpenStack and the OpenStack logo are trademarks of the OpenStack Foundation d/b/a Open Infrastructure Foundation. Other product and project names mentioned in this book are trademarks of their respective owners.
 

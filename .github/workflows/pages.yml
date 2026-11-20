@@ -3,8 +3,7 @@ name: pages
 # Publishes site/, the page of the book at https://book.ozarland.com/, with
 # GitHub Pages. site/ is plain HTML: nothing is built. The custom domain is
 # set in Settings, Pages (GitHub Pages ignores a CNAME file when a workflow
-# deploys). The PDFs are not published here: build-book.yml releases them on
-# the Releases page, which the site links to.
+# deploys).
 
 on:
   push:

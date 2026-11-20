@@ -4,15 +4,12 @@
 
 **Author: Soufian Zaouam**
 
-[![Download the PDF](https://img.shields.io/badge/Download-PDF%20(latest%20release)-2ea44f?style=for-the-badge)](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/latest)
-[![Version](https://img.shields.io/github/v/release/OzarLand/openstack-the-day-after-tomorrow?label=version&style=for-the-badge)](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases)
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey?style=for-the-badge)](LICENSE)
+[![Read the book](https://img.shields.io/badge/Read-the%20book-2ea44f?style=for-the-badge)](#read-the-book-on-github)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge)](LICENSE)
 
-This is the author's official repository for the book *OpenStack, the Day After Tomorrow*. It is the reference place to download the current edition, follow new versions, and report errors. The book's page is **https://book.ozarland.com/**.
+This is the author's official repository for the book *OpenStack, the Day After Tomorrow*. It is the reference place to read the current edition, follow its changes, and report errors. The book's page is **https://book.ozarland.com/**.
 
-**Édition française :** le livre existe aussi en français, *OpenStack, après-demain*, maintenu dans ce même dépôt chapitre par chapitre. Voir [fr/README.md](fr/README.md).
-
-The book is published freely, as a **PDF** (see [Download](#download)) and as **Markdown, one file per chapter, readable directly on GitHub** (see [Read the book on GitHub](#read-the-book-on-github)). It is an **independent, personal contribution to the OpenStack community**. It is not a publication of the OpenStack Foundation (OpenInfra Foundation), of a publisher, or of any employer or client, and it does not describe any specific organisation's platform.
+The book is published freely, as **Markdown, one file per chapter, readable directly on GitHub** (see [Read the book on GitHub](#read-the-book-on-github)). It is an **independent, personal contribution to the OpenStack community**. It is not a publication of the OpenStack Foundation (OpenInfra Foundation), of a publisher, or of any employer or client, and it does not describe any specific organisation's platform.
 
 ---
 
@@ -40,9 +37,9 @@ Throughout, *Technical note*, *Principle* and *From the field* boxes separate do
 
 ## Read the book on GitHub
 
-The full text of the book is published in this repository as Markdown, **one file per chapter**, so that it can be read directly on GitHub, searched, linked to and quoted by section. The text is that of the PDF, which is generated from these very files; the five figures are provided as SVG in [`assets/figures/`](assets/figures/).
+The full text of the book is published in this repository as Markdown, **one file per chapter**, so that it can be read directly on GitHub, searched, linked to and quoted by section. The five figures are provided as SVG in [`assets/figures/`](assets/figures/).
 
-Start with [How to Read This Book](chapters/00-how-to-read-this-book.md), then follow the *Previous / Contents / Next* links at the bottom of every chapter. The PDF remains available for offline reading (see [Download](#download)).
+Start with [How to Read This Book](chapters/00-how-to-read-this-book.md), then follow the *Previous / Contents / Next* links at the bottom of every chapter.
 
 | | Chapter |
 | --- | --- |
@@ -94,24 +91,17 @@ openstack-the-day-after-tomorrow/
 ├── README.md              this page: presentation and table of contents
 ├── chapters/              front matter, introduction, chapters 1–20 and the conclusion (one Markdown file each)
 ├── appendices/            appendices A–F and the references
-├── assets/figures/        the book's figures (SVG); assets/figures/fr/ holds the French-labelled versions
-├── fr/                    the French edition: README (table of contents), STYLE.md (method and terminology),
-│                          chapters/ and appendices/ mirroring the English files one for one
-├── tools/pdf/             how the PDFs are generated from the Markdown (pandoc + XeLaTeX), both editions
-├── tools/figures/         how the French figures are produced from the English ones
-├── tools/check_editions.py  checks that the two editions stay in step (structure, links, typography)
+├── assets/figures/        the book's figures (SVG)
 ├── site/                  the book's page, https://book.ozarland.com/ (plain HTML, published by pages.yml)
-├── .github/workflows/     build-book.yml: checks the editions, builds, verifies and releases the PDFs;
-│                          pages.yml: publishes site/
-├── CHANGELOG.md           published versions
+├── .github/workflows/     pages.yml: publishes site/
+├── CHANGELOG.md           dated history of the changes
 ├── CONTRIBUTING.md        how to report errata and suggestions
 ├── CITATION.cff           machine-readable citation
-└── LICENSE                CC BY-NC-ND 4.0
+├── LICENSE                Apache License, Version 2.0
+└── NOTICE                 copyright and trademark notice
 ```
 
-The English text is the reference edition. Every file of the French edition has the same chapter number or appendix letter as its English counterpart, so that a correction can be carried from one to the other; the mapping is listed in [`fr/STYLE.md`](fr/STYLE.md).
-
-Throughout the text, three kinds of boxed passage from the PDF are rendered as quotations: **Technical note** (verifiable OpenStack facts, with a reference), **Principle** (an operating rule the book recommends) and **From the field** (an operational situation and the decision it required).
+Throughout the text, three kinds of passage are set apart as quotations: **Technical note** (verifiable OpenStack facts, with a reference), **Principle** (an operating rule the book recommends) and **From the field** (an operational situation and the decision it required).
 
 ## Companion resources
 
@@ -135,18 +125,9 @@ Deployment is the beginning of the operational journey, not the end. The hard-wo
 
 **Why it is published openly.** OpenStack is open source, and most of what I know about operating it I learned from documentation, code and discussions that other people chose to share. Publishing this book freely is the most direct way I have to give something back, and to have its content discussed, corrected and improved by the people who operate these platforms every day.
 
-## Download
+## Current edition
 
-| | |
-|---|---|
-| **Current version** | v1.3 |
-| **Published** | October 2026 |
-| **Format** | PDF (English, 114 pages; French, 125 pages) · Markdown (this repository) |
-| **Download** | **[Latest release →](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases/latest)** |
-
-The PDF is distributed exclusively through the [Releases](https://github.com/OzarLand/openstack-the-day-after-tomorrow/releases) page of this repository. Each version is tagged, dated and accompanied by release notes. Previous versions remain available. See [CHANGELOG.md](CHANGELOG.md) for the history of changes.
-
-The PDF is **generated automatically from the Markdown sources** of this repository ([`chapters/`](chapters/), [`appendices/`](appendices/), [`assets/figures/`](assets/figures/)) by a GitHub Actions workflow that rebuilds and verifies it on every change; a version tag publishes it as a release, together with the PDF of the [French edition](fr/README.md) (`openstack-the-day-after-tomorrow-fr-vX.Y.pdf`). See [`tools/pdf/README.md`](tools/pdf/README.md) for the toolchain (pandoc + XeLaTeX) and for building it locally.
+The text on the `main` branch of this repository is the current edition of the book. Every change is dated and described in [CHANGELOG.md](CHANGELOG.md). The book is published as Markdown only: there are no numbered versions, no releases and no PDF.
 
 ## Reporting errors and suggesting improvements
 
@@ -155,19 +136,19 @@ Corrections, technical objections and suggestions are welcome and are the main w
 - **Found a mistake?** (technical error, typo, unclear passage, broken reference) → [open an *Errata* issue](https://github.com/OzarLand/openstack-the-day-after-tomorrow/issues/new?template=errata.yml)
 - **Have a suggestion or a question about the content?** → [open a *Suggestion* issue](https://github.com/OzarLand/openstack-the-day-after-tomorrow/issues/new?template=suggestion.yml)
 
-Please mention the book version and the page (PDF) or the chapter file and section (Markdown) concerned. Confirmed corrections are listed in the [changelog](CHANGELOG.md) and integrated into the next version. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Please mention the chapter file and section concerned. Confirmed corrections are integrated into the text and listed in the [changelog](CHANGELOG.md). See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## License
 
 Copyright © 2026 Soufian Zaouam.
 
-The book is released under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) licence (CC BY-NC-ND 4.0). You are free to read it, download it, share it and redistribute it, in any medium, as long as you credit the author, do not use it commercially and do not distribute modified versions. See [LICENSE](LICENSE).
+The book, its figures and the book's page are released under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). You are free to read, share, adapt, translate and redistribute them, including commercially, as long as you keep the copyright and licence notices and state the changes you make. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
-For uses not covered by the licence — translations into other languages, excerpts for training material, inclusion in a commercial offering — please open an issue or contact the author. Reasonable requests are usually welcome. The French edition in [`fr/`](fr/) is the author's own and is covered by the same licence.
+Editions published before 20 November 2026, including their PDFs, were released under CC BY-NC-ND 4.0.
 
 ## Citing this book
 
-> Zaouam, S. (2026). *OpenStack, the Day After Tomorrow: Operating Mission-Critical OpenStack Platforms* (v1.3). https://github.com/OzarLand/openstack-the-day-after-tomorrow
+> Zaouam, S. (2026). *OpenStack, the Day After Tomorrow: Operating Mission-Critical OpenStack Platforms*. https://book.ozarland.com/
 
 A machine-readable citation is provided in [CITATION.cff](CITATION.cff).
 
