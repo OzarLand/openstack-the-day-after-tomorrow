@@ -1,0 +1,86 @@
+{
+  "brand": {
+    "navy": "#1F3A6B",
+    "navy-strong": "#152A50",
+    "parchment": "#F3E3C3",
+    "parchment-soft": "#FBF4E4",
+    "wood": "#C4904F",
+    "wood-dark": "#6B4220",
+    "lantern": "#F0B440",
+    "sea": "#1E9FB5",
+    "terracotta": "#B55A3A",
+    "sky": "#2F6FD0",
+    "green": "#2C7A43"
+  },
+  "part_accents": {
+    "part-I": "#2F6FD0",
+    "part-II": "#1E9FB5",
+    "part-III": "#2C7A43",
+    "part-IV": "#C4904F",
+    "part-V": "#B55A3A",
+    "part-VI": "#1F3A6B"
+  },
+  "text_pairs": [
+    {
+      "foreground": "#152A50",
+      "background": "#FBF4E4",
+      "ratio": 12.96,
+      "wcag_aa_normal": "pass",
+      "use": "light body text"
+    },
+    {
+      "foreground": "#0F62A6",
+      "background": "#FBF4E4",
+      "ratio": 5.78,
+      "wcag_aa_normal": "pass",
+      "use": "light links"
+    },
+    {
+      "foreground": "#F3E3C3",
+      "background": "#11151A",
+      "ratio": 14.47,
+      "wcag_aa_normal": "pass",
+      "use": "dark body text"
+    },
+    {
+      "foreground": "#74B7EE",
+      "background": "#11151A",
+      "ratio": 8.51,
+      "wcag_aa_normal": "pass",
+      "use": "dark links"
+    }
+  ],
+  "focus": {
+    "light_inner": "#F0B440",
+    "light_outer": "#152A50",
+    "light_inner_on_canvas_ratio": 1.69,
+    "light_outer_on_canvas_ratio": 12.96,
+    "note": "Gold alone on the light canvas is 1.69:1 and fails the 3:1 non-text focus target; use the navy outer keyline."
+  },
+  "semantic_risk": {
+    "read_only": {
+      "light_text": "#4B3B69",
+      "light_background": "#F0ECF7",
+      "light_contrast_ratio": 8.48,
+      "dark_text": "#D7C9F0",
+      "dark_background": "#30293D",
+      "dark_contrast_ratio": 8.94
+    },
+    "state_changing": {
+      "light_text": "#654100",
+      "light_background": "#FFF1CF",
+      "light_contrast_ratio": 8.11,
+      "dark_text": "#F2D28A",
+      "dark_background": "#3A301E",
+      "dark_contrast_ratio": 8.86
+    },
+    "destructive": {
+      "light_text": "#7A2430",
+      "light_background": "#F9E7EA",
+      "light_contrast_ratio": 8.31,
+      "dark_text": "#F0B1BB",
+      "dark_background": "#3D2228",
+      "dark_contrast_ratio": 8.03
+    }
+  }
+}

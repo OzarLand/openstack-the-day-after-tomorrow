@@ -7,7 +7,7 @@
 [![Read the book](https://img.shields.io/badge/Read-the%20book-2ea44f?style=for-the-badge)](#read-the-book-on-github)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge)](LICENSE)
 
-This is the author's official repository for the book *OpenStack, the Day After Tomorrow*. It is the reference place to read the current edition, follow its changes, and report errors. The book's page is **https://book.ozarland.com/**.
+This is the author's official repository for the book *OpenStack, the Day After Tomorrow*. It is the reference place to read the current edition, follow its changes, and report errors. The book's page is **https://book.ozarland.com/**, where it is told as a story: LUMO, the cartographer of OzarLand, crosses an archipelago of twenty stops with an operations team, and each chapter follows word for word.
 
 The book is published freely, as **Markdown, one file per chapter, readable directly on GitHub** (see [Read the book on GitHub](#read-the-book-on-github)). It is an **independent, personal contribution to the OpenStack community**. It is not a publication of the OpenStack Foundation (OpenInfra Foundation), of a publisher, or of any employer or client, and it does not describe any specific organisation's platform.
 
@@ -92,8 +92,10 @@ openstack-the-day-after-tomorrow/
 ├── chapters/              front matter, introduction, chapters 1–20 and the conclusion (one Markdown file each)
 ├── appendices/            appendices A–F and the references
 ├── assets/figures/        the book's figures (SVG)
-├── site/                  the book's page, https://book.ozarland.com/ (plain HTML, published by pages.yml)
-├── .github/workflows/     pages.yml: publishes site/
+├── story/                 the story layer of https://book.ozarland.com/: LUMO's crossing (story.json) and its art direction
+├── site/                  static assets and stylesheet of https://book.ozarland.com/
+├── tools/site/build.py    builds the site from the chapters, word for word, framed by the story
+├── .github/workflows/     pages.yml: builds, checks and publishes the site
 ├── CHANGELOG.md           dated history of the changes
 ├── CONTRIBUTING.md        how to report errata and suggestions
 ├── CITATION.cff           machine-readable citation

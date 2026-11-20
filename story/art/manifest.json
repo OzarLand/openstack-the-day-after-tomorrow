@@ -1,0 +1,242 @@
+[
+  {
+    "file": "assets/lumo-reference.webp",
+    "width": 1200,
+    "height": 600,
+    "purpose": "Existing reference image for LUMO identity.",
+    "alt_text": "A cartographer guide in a navy cloud-emblem cape holds a lantern at an island crossroads.",
+    "status": "reference"
+  },
+  {
+    "file": "assets/island-style-reference.webp",
+    "width": 1600,
+    "height": 1000,
+    "purpose": "Existing reference image for OzarLand painted style.",
+    "alt_text": "A group of travellers studies a map on a wooden terrace above a bright island city and sea.",
+    "status": "reference"
+  },
+  {
+    "file": "assets/journey-map-concept.png",
+    "width": 1490,
+    "height": 1055,
+    "purpose": "Generated composition concept for the double-page island journey map.",
+    "alt_text": "An illustrated island route winds from LUMO at a harbour through misted hills, workshops, an archive village and a lighthouse where a team shares lanterns.",
+    "status": "draft"
+  },
+  {
+    "file": "assets/cover-concept.png",
+    "width": 1024,
+    "height": 1536,
+    "purpose": "Generated cover-art concept with title-safe sky.",
+    "alt_text": "LUMO holds a lantern and book on a terrace overlooking a bright island city and a small working team.",
+    "status": "draft"
+  },
+  {
+    "file": "assets/lumo-model-sheet-concept.png",
+    "width": 1536,
+    "height": 1024,
+    "purpose": "Generated character reference sheet with turnaround, expressions and accessory studies.",
+    "alt_text": "A model sheet shows the same LUMO in three full-body views, eight expressions, and lantern, compass and satchel studies.",
+    "status": "draft"
+  },
+  {
+    "file": "prompts/chapter-01.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 1 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 1 illustration showing le quai de passation.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-02.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 2 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 2 illustration showing le cap des signaux.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-03.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 3 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 3 illustration showing les terrasses des compromis.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-04.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 4 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 4 illustration showing le chemin des sept pierres.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-05.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 5 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 5 illustration showing le plateau d'observation.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-06.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 6 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 6 illustration showing la tour des mesures.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-07.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 7 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 7 illustration showing le refuge de restauration.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-08.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 8 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 8 illustration showing la galerie des dépendances.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-09.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 9 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 9 illustration showing l'atelier des transformations.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-10.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 10 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 10 illustration showing le réservoir-mémoire.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-11.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 11 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 11 illustration showing les archives vivantes.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-12.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 12 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 12 illustration showing le pont de transmission.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-13.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 13 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 13 illustration showing le pavillon des deux autorités.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-14.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 14 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 14 illustration showing le col des routes amont.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-15.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 15 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 15 illustration showing le raccourci hérité.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-16.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 16 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 16 illustration showing le moulin transparent.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-17.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 17 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 17 illustration showing le phare des renouvellements.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-18.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 18 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 18 illustration showing la crête des états d'exploitation.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-19.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 19 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 19 illustration showing le relais messagerie et base de données.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/chapter-20.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for chapter 20 opening illustration.",
+    "alt_text": "Prompt brief for a chapter 20 illustration showing le col des réserves.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/cover.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for the book cover illustration.",
+    "alt_text": "Prompt brief for a portrait cover illustration of LUMO and the island city.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/lumo-model-sheet.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for the LUMO character model sheet.",
+    "alt_text": "Prompt brief for a character turnaround and expression sheet for LUMO.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/journey-map.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for the two-page illustrated journey map.",
+    "alt_text": "Prompt brief for a continuous island route map with a clear binding fold.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/opening.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for the opening harbour illustration.",
+    "alt_text": "Prompt brief for LUMO welcoming readers at the harbour handover.",
+    "status": "prompt-only"
+  },
+  {
+    "file": "prompts/conclusion.md",
+    "width": null,
+    "height": null,
+    "purpose": "Generation prompt for the conclusion illustration.",
+    "alt_text": "Prompt brief for LUMO passing a lantern to the operations team at the lighthouse.",
+    "status": "prompt-only"
+  }
+]
